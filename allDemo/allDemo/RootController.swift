@@ -21,7 +21,11 @@ class RootController: UITableViewController,UITableViewDataSource,UITableViewDel
         self.title = "allDemo"
         
         items.append("collectionViewWithHeader")
+        items.append("标签")
+        items.append("录音")
         controllers.append(collectionViewWithHeaderViewController())
+        controllers.append(TagController())
+        controllers.append(RecorderViewController())
         // Do any additional setup after loading the view, typically from a nib.
     }
 

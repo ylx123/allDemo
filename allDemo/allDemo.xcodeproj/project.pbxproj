@@ -15,6 +15,9 @@
 		B5B090C71AB7C4FB0055C52B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B090C51AB7C4FB0055C52B /* LaunchScreen.xib */; };
 		B5B090D31AB7C4FB0055C52B /* allDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090D21AB7C4FB0055C52B /* allDemoTests.swift */; };
 		B5B090DF1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090DE1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift */; };
+		B5B7EFF81AB85B7F00275205 /* TagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7EFF71AB85B7F00275205 /* TagController.swift */; };
+		B5B7EFFC1AB85D1E00275205 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B7EFFB1AB85D1E00275205 /* img1.jpg */; };
+		B5B7EFFF1AB86C6500275205 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7EFFE1AB86C6500275205 /* RecorderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		B5B090D11AB7C4FB0055C52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B090D21AB7C4FB0055C52B /* allDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allDemoTests.swift; sourceTree = "<group>"; };
 		B5B090DE1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionViewWithHeaderViewController.swift; sourceTree = "<group>"; };
+		B5B7EFF71AB85B7F00275205 /* TagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagController.swift; sourceTree = "<group>"; };
+		B5B7EFFB1AB85D1E00275205 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		B5B7EFFE1AB86C6500275205 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		B5B090B61AB7C4FB0055C52B /* allDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B5B7EFF91AB85CFB00275205 /* Resources */,
 				B5B090DC1AB7CA5A0055C52B /* demos */,
 				B5B090B91AB7C4FB0055C52B /* AppDelegate.swift */,
 				B5B090BE1AB7C4FB0055C52B /* RootController.swift */,
@@ -121,6 +128,8 @@
 		B5B090DC1AB7CA5A0055C52B /* demos */ = {
 			isa = PBXGroup;
 			children = (
+				B5B7EFFD1AB86C5700275205 /* RecordController */,
+				B5B7EFF61AB85B6B00275205 /* TagController */,
 				B5B090DD1AB7CA730055C52B /* collectionViewWithHeader */,
 			);
 			path = demos;
@@ -132,6 +141,38 @@
 				B5B090DE1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift */,
 			);
 			path = collectionViewWithHeader;
+			sourceTree = "<group>";
+		};
+		B5B7EFF61AB85B6B00275205 /* TagController */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7EFF71AB85B7F00275205 /* TagController.swift */,
+			);
+			path = TagController;
+			sourceTree = "<group>";
+		};
+		B5B7EFF91AB85CFB00275205 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7EFFA1AB85D0E00275205 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5B7EFFA1AB85D0E00275205 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7EFFB1AB85D1E00275205 /* img1.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B5B7EFFD1AB86C5700275205 /* RecordController */ = {
+			isa = PBXGroup;
+			children = (
+				B5B7EFFE1AB86C6500275205 /* RecorderViewController.swift */,
+			);
+			path = RecordController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B7EFFC1AB85D1E00275205 /* img1.jpg in Resources */,
 				B5B090C21AB7C4FB0055C52B /* Main.storyboard in Resources */,
 				B5B090C71AB7C4FB0055C52B /* LaunchScreen.xib in Resources */,
 				B5B090C41AB7C4FB0055C52B /* Images.xcassets in Resources */,
@@ -234,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B7EFFF1AB86C6500275205 /* RecorderViewController.swift in Sources */,
 				B5B090BF1AB7C4FB0055C52B /* RootController.swift in Sources */,
+				B5B7EFF81AB85B7F00275205 /* TagController.swift in Sources */,
 				B5B090BD1AB7C4FB0055C52B /* allDemo.xcdatamodeld in Sources */,
 				B5B090DF1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift in Sources */,
 				B5B090BA1AB7C4FB0055C52B /* AppDelegate.swift in Sources */,
@@ -431,6 +475,7 @@
 				B5B090D81AB7C4FB0055C52B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5B090D91AB7C4FB0055C52B /* Build configuration list for PBXNativeTarget "allDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +484,7 @@
 				B5B090DB1AB7C4FB0055C52B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

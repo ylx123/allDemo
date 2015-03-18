@@ -27,6 +27,7 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         collev.backgroundColor = UIColor.clearColor()
         collev.dataSource = self
         collev.delegate = self
+        
         self.view.addSubview(collev)
         // Do any additional setup after loading the view.
     }
