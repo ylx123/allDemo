@@ -9,86 +9,122 @@
 import UIKit
 import AVFoundation
 
-class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate {
+//import QuartzCore
+
+
+class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate,CircleViewAnimationDelegate {
 
     var recordButton:UIButton!
     var stopButton:UIButton!
+    var circleButton:UIButton!
     var playButton:UIButton!
     var recorder:AVAudioRecorder!
     var player:AVAudioPlayer!
-    
+    var timer:NSTimer?
+    var circleView:CircleView!
+    var secondLabel:UILabel!
+    var tips:UILabel!
+    var multiLayer:MultiplePulsingHaloLayer!
     
     var soundFileURL:NSURL?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.backgroundColor = UIColor.whiteColor()
-        recordButton = UIButton(frame: CGRect(x: 0, y: 100, width: 60, height: 40))
-        recordButton.setTitle("录音", forState: UIControlState.Normal)
-        recordButton.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        
+        var titleLabel = UILabel(frame: CGRect(x: 0, y: 64, width: mw, height: 30))
+        titleLabel.text = "添加语音标签"
+        titleLabel.textAlignment = NSTextAlignment.Center
+        self.view.addSubview(titleLabel)
+        
+        recordButton = UIButton(frame: CGRect(x:( mw - 50 )/2, y: mh - 50, width: 50, height: 50))
+        recordButton.setImage(UIImage(named: "microphone_act.png"), forState: UIControlState.Normal)
+        recordButton.setImage(UIImage(named: "microphone_dis.png"), forState: UIControlState.Disabled)
         self.view.addSubview(recordButton)
-        recordButton.addTarget(self, action: "recordAudio:", forControlEvents: UIControlEvents.TouchUpInside)
+        var longPress = UILongPressGestureRecognizer(target: self, action: "longPress:")
+        recordButton.addGestureRecognizer(longPress)
+        longPress.allowableMovement = 20
         
-        stopButton = UIButton(frame: CGRect(x: 100, y: 100, width: 60, height: 40))
-        stopButton.setTitle("停止", forState: UIControlState.Normal)
-        stopButton.addTarget(self, action: "stopRecordingAudio:", forControlEvents: UIControlEvents.TouchUpInside)
-        stopButton.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
-        self.view.addSubview(stopButton)
         
-        playButton = UIButton(frame: CGRect(x: 200, y: 100, width: 60, height: 40))
+        tips = UILabel(frame: CGRect(x: 0, y: 150, width: mw, height: 70))
+        tips.numberOfLines = 0
+        tips.textAlignment = NSTextAlignment.Center
+        tips.text = "长按录音按钮\n记录下声音\n(最多可以录15秒哦)"
+        self.view.addSubview(tips)
+        
+        
+        //圆
+        let diceRoll = 0
+        var circleWidth = 100
+        var circleHeight = circleWidth
+        var pointx = Int((mw - CGFloat(circleWidth))/2)
+        circleView = CircleView(frame: CGRect(x:pointx, y: 150, width: circleWidth, height: circleHeight))
+        circleView.finishDelegate = self
+        self.view.addSubview(circleView)
+
+        //秒
+        secondLabel = UILabel(frame: circleView.frame)
+        secondLabel.text = "0\""
+        secondLabel.textAlignment = NSTextAlignment.Center
+        secondLabel.textColor = UIColor.redColor()
+        secondLabel.hidden = true
+        self.view.addSubview(secondLabel)
+        
+        playButton = UIButton(frame: CGRect(x: 0, y: mh - 50, width: 50, height: 30))
         playButton.setTitle("播放", forState: UIControlState.Normal)
-        playButton.addTarget(self, action: "playRecordingAudio:", forControlEvents: UIControlEvents.TouchUpInside)
         playButton.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        playButton.addTarget(self, action: "playRecordingAudio:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(playButton)
-        setSessionPlayback()
         
         
-        var paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
-        var recordSettings = [
-            AVFormatIDKey: kAudioFormatAppleLossless,
-            AVEncoderAudioQualityKey : AVAudioQuality.Max.rawValue,
-            AVEncoderBitRateKey : 320000,
-            AVNumberOfChannelsKey: 2,
-            AVSampleRateKey : 44100.0
-        ]
-        var error: NSError?
-        
-        var filename = "recording.m4a"
-        var dirPaths = NSSearchPathForDirectoriesInDomains( NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask,  true)
-        var docsDir:AnyObject = dirPaths[0]
-        var soundFilePath = docsDir.stringByAppendingPathComponent(filename)
-        soundFileURL = NSURL(fileURLWithPath: soundFilePath)
-        recorder = AVAudioRecorder(URL: NSURL(fileURLWithPath: "\(paths[0])/sound.m4a")!, settings: recordSettings, error: &error)
-        if let e = error {
-            
-            println(e.localizedDescription)
-        } else {
-            recorder.delegate = self
-            recorder.meteringEnabled = true
-            recorder.prepareToRecord() // creates/overwrites the file at soundFileURL
-        }
 
-
-       
-
-        // Do any additional setup after loading the view.
     }
     
-    func setSessionPlayback() {
-        let session:AVAudioSession = AVAudioSession.sharedInstance()
-        var error: NSError?
-        if !session.setCategory(AVAudioSessionCategoryPlayback, error:&error) {
+    func circleViewAnimationDidFinish(it:Int) {
+        self.secondLabel.text = "\(it)\""
+    }
+    func longPress(press:UILongPressGestureRecognizer){
+        
+        if(press.state == UIGestureRecognizerState.Began){
             
-            if let e = error {
-                println(e.localizedDescription)
-            }
-        }
-        if !session.setActive(true, error: &error) {
+            self.setupRecorder()
+            self.recordAudio()
+            println("press")
+            tips.hidden = true
+            secondLabel.hidden = false
             
-            if let e = error {
-                println(e.localizedDescription)
+            //圆圈开始动
+            var it:Int = 1
+            circleView.animateCircle(it)
+            self.secondLabel.text = "\(0)\""
+            it++
+            timer = NSTimer.scheduledTimerWithTimeInterval(1, repeats: true){
+                
+                
+                if(it >= 15){
+                    
+                    self.timer?.invalidate()
+                }
+                self.circleView.animateCircle(it)
+                ++it
+                
             }
+
+            
+            multiLayer = MultiplePulsingHaloLayer(haloLayerNum: 3, andStartInterval: 1)
+            multiLayer.radius = 100
+            multiLayer.haloLayerColor = UIColor.redColor().CGColor
+            multiLayer.position = self.recordButton.center
+            multiLayer.buildSublayers()
+            self.view.layer.addSublayer(multiLayer)
+
+        
+        }else if(press.state == UIGestureRecognizerState.Ended){
+            multiLayer.removeFromSuperlayer()
+            recorder.stop()
+            timer?.invalidate()
         }
+        
     }
     
 
@@ -102,16 +138,18 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
 
     func playRecordingAudio(button:UIButton){
         
-        println("play")
+        
         player = AVAudioPlayer(contentsOfURL: recorder.url, error: nil)
+        
         player.prepareToPlay()
+        println(player.duration)
         player.play()
     
     }
 
     
     
-    func recordAudio(sender: UIButton) {
+    func recordAudio() {
         
         
         if player != nil && player.playing {
@@ -119,25 +157,18 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
         }
         
         if recorder == nil {
-            println("recording. recorder nil")
-            recordButton.setTitle("暂停", forState:.Normal)
-            playButton.enabled = false
-            stopButton.enabled = true
+            //recoder 没有准备好
             recordWithPermission(true)
             return
         }
         
         if recorder != nil && recorder.recording {
-            println("暂停ing")
-            recorder.pause()
-            recordButton.setTitle("Continue", forState:.Normal)
+            //录音中点击按钮
             
         } else {
-            println("录音。。。")
-            recordButton.setTitle("Pause", forState:.Normal)
-            playButton.enabled = false
-            stopButton.enabled = true
-            //            recorder.record()
+            
+            //录音中
+
             recordWithPermission(false)
         }
 
@@ -145,22 +176,15 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
         
     }
     
-    
-    func stopRecordingAudio(sender: UIButton) {
-        recorder.stop()
 
-        println("stop")
-        
-    }
-    
     
     func recordWithPermission(setup:Bool) {
         let session:AVAudioSession = AVAudioSession.sharedInstance()
-        // ios 8 and later
+       
         if (session.respondsToSelector("requestRecordPermission:")) {
             AVAudioSession.sharedInstance().requestRecordPermission({(granted: Bool)-> Void in
                 if granted {
-                    println("Permission to record granted")
+                    
                     self.setSessionPlayAndRecord()
                     if setup {
                         self.setupRecorder()
@@ -168,34 +192,42 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
                     self.recorder.record()
 
                 } else {
-                    println("Permission to record not granted")
+                    //录音授权失败
                 }
             })
         } else {
-            println("requestRecordPermission unrecognized")
+            
         }
     }
     func setSessionPlayAndRecord() {
         let session:AVAudioSession = AVAudioSession.sharedInstance()
         var error: NSError?
-        if !session.setCategory(AVAudioSessionCategoryPlayAndRecord, error:&error) {
-            println("could not set session category")
+        
+        if(!session.setCategory(AVAudioSessionCategoryPlayAndRecord, withOptions: AVAudioSessionCategoryOptions.DefaultToSpeaker, error: &error)){
+        
             if let e = error {
-                println(e.localizedDescription)
+                
             }
         }
         if !session.setActive(true, error: &error) {
-            println("could not make session active")
+            
             if let e = error {
-                println(e.localizedDescription)
+                
             }
         }
+        
+        
+        var audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker
+        
+       
+        
+
     }
     func setupRecorder() {
         var format = NSDateFormatter()
         format.dateFormat="yyyy-MM-dd-HH-mm-ss"
         var currentFileName = "recording-\(format.stringFromDate(NSDate())).m4a"
-        println(currentFileName)
+        
         
         var dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         var docsDir: AnyObject = dirPaths[0]
@@ -203,7 +235,7 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
         soundFileURL = NSURL(fileURLWithPath: soundFilePath)
         let filemanager = NSFileManager.defaultManager()
         if filemanager.fileExistsAtPath(soundFilePath) {
-            // probably won't happen. want to do something about it?
+            
             println("sound exists")
         }
         
@@ -230,9 +262,7 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!,
         successfully flag: Bool) {
             println("finished recording \(flag)")
-            stopButton.enabled = false
-            playButton.enabled = true
-            recordButton.setTitle("Record", forState:.Normal)
+
     }
     
     func audioRecorderEncodeErrorDidOccur(recorder: AVAudioRecorder!,
@@ -242,8 +272,7 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
 
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
         println("finished playing \(flag)")
-        recordButton.enabled = true
-        stopButton.enabled = false
+
     }
     
     func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!, error: NSError!) {

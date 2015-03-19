@@ -1,0 +1,19 @@
+PODS:
+  - PulsingHalo (0.0.4)
+
+DEPENDENCIES:
+  - PulsingHalo (from `https://github.com/shu223/PulsingHalo.git`)
+
+EXTERNAL SOURCES:
+  PulsingHalo:
+    :git: https://github.com/shu223/PulsingHalo.git
+
+CHECKOUT OPTIONS:
+  PulsingHalo:
+    :commit: f3dbe609e6f0c15729d5abe9ec547318763481d7
+    :git: https://github.com/shu223/PulsingHalo.git
+
+SPEC CHECKSUMS:
+  PulsingHalo: 67b819b384b792d0f19e15621dd045196cf00f96
+
+COCOAPODS: 0.36.0

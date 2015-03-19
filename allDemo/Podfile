@@ -1,0 +1,3 @@
+platform :ios, '7.0'
+pod 'PulsingHalo', :git => 'https://github.com/shu223/PulsingHalo.git'
+
