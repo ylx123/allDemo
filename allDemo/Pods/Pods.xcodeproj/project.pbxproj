@@ -7,185 +7,262 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0556934156EC3CEA4EADD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C29179E868AC47BF1C27D49 /* Foundation.framework */; };
-		2E933EB3EE7D28CC2D91981D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B322AB16C1E0CD6CC4968636 /* QuartzCore.framework */; };
-		5761FDA619EC4BE813EF2363 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C94CA3472E065CF7CD3E53C1 /* PulsingHaloLayer.h */; };
-		72B14F3FBB25AE79A05DCFA7 /* MultiplePulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0757B8F68AD5D8D75A5BD85D /* MultiplePulsingHaloLayer.h */; };
-		A1AB36922818717237AE3961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C29179E868AC47BF1C27D49 /* Foundation.framework */; };
-		A1EEB23F6F779697741C4F50 /* Pods-PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6D58311669707507C44E2 /* Pods-PulsingHalo-dummy.m */; };
-		BC8CED8A798A9FB3C3D6AA2E /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 595C65F0EF062BFD1D66D022 /* MultiplePulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EFD8715D74BEA3744E122E8D /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B96EEF64DE1967C7E44083E4 /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FBF712080BEB71328FEA4160 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B81DD3A8F18541C42170EE /* Pods-dummy.m */; };
+		079E2985EB87251277A3FDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */; };
+		16F7BA202A21EC1C1F51B998 /* SPGripViewBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C46C0EF959C1295F997254 /* SPGripViewBorderView.m */; };
+		1BA6C4E0620EC63917820093 /* Pods-PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A6F6152FDB2C3EE8C44790 /* Pods-PulsingHalo-dummy.m */; };
+		2CB6E14762521E7466907640 /* MultiplePulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A275E94471C22CCF5F30AE24 /* MultiplePulsingHaloLayer.h */; };
+		36D88033B6C5D89AF8CDE475 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 95AE90A5DC02335A56017462 /* PulsingHaloLayer.h */; };
+		7524A19F2F681187643BADE6 /* Pods-ZDStickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B59888767D52AAC9D403E9 /* Pods-ZDStickerView-dummy.m */; };
+		9DB5A4CE5F49DED9852E2B5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */; };
+		A3D866353B82DE227F876EFF /* ZDStickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F750B6DA4F3D27CD26930DC /* ZDStickerView.h */; };
+		AB218771F07B4C0EAABF59D3 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F67281618F0BD6A7AB7C10A0 /* Pods-dummy.m */; };
+		B79A35F657EAE02A1748EA7C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21818F4EFA7E2B695FA5AFF8 /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C0D4322B46A2677F395888B8 /* SPGripViewBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A05B4E25A05769E46552F4D /* SPGripViewBorderView.h */; };
+		E72B3E07E8A8B66597E39114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */; };
+		F18D4D63387CB1AAB9F0A41B /* ZDStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5878DEF30570E7389DDCF7 /* ZDStickerView.m */; };
+		F1E9904C121F5D73D4193DD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */; };
+		F3A7617C918EB04FF1D85E6B /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D5FC17351D9ECBD1C4B55 /* MultiplePulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6FFC9EF3D44CBFA388CBB17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		16CE811F4B0B9E879F1D0425 /* PBXContainerItemProxy */ = {
+		4F64E996C646A44C26AA75E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CB0269CB6883CDD3924582F5 /* Project object */;
+			containerPortal = 7FF57E5741E7CEFDBBEDC703 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 810E452C4AEEB216238796E0;
+			remoteGlobalIDString = 0EA80FD506D8A31AA9DD93C7;
 			remoteInfo = "Pods-PulsingHalo";
+		};
+		D7BD41EA2B24A9AD45BFB838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FF57E5741E7CEFDBBEDC703 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39528A7A494BF7DBED2BB0A;
+			remoteInfo = "Pods-ZDStickerView";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011FE5B0CDD2C689F3596F18 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		0757B8F68AD5D8D75A5BD85D /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiplePulsingHaloLayer.h; path = PulsingHalo/MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
-		0C29179E868AC47BF1C27D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		217A946FB05FB0BE5CDF0E53 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2D06E62247D5EBE04378D1AB /* Pods-PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
-		2FB74E3D4D11AFA72264197B /* libPods-PulsingHalo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PulsingHalo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		595C65F0EF062BFD1D66D022 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiplePulsingHaloLayer.m; path = PulsingHalo/MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
-		787486E3C20245F9A3530562 /* Pods-PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo.xcconfig"; sourceTree = "<group>"; };
-		8CA6D58311669707507C44E2 /* Pods-PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PulsingHalo-dummy.m"; sourceTree = "<group>"; };
-		931C1B9E5AACA186171E36FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7955E28598B1610082FCD2C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A8F5C63FE66C21B503671745 /* Pods-PulsingHalo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo-Private.xcconfig"; sourceTree = "<group>"; };
-		B322AB16C1E0CD6CC4968636 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		B8732AEB0B06736356985665 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		B96EEF64DE1967C7E44083E4 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
-		BFEE606CDBF5C94789F2EE18 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		C94CA3472E065CF7CD3E53C1 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
-		D3B81DD3A8F18541C42170EE /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		E648FABA5520AE22DB07A9D0 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8EF0D29C5DE05739432326A /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		03F736F5D5C1F3A08AD52DD9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		14DC12114B07D569DB9F9F66 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		187D5FC17351D9ECBD1C4B55 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiplePulsingHaloLayer.m; path = PulsingHalo/MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
+		20C46C0EF959C1295F997254 /* SPGripViewBorderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGripViewBorderView.m; path = ZDStickerView/SPGripViewBorderView.m; sourceTree = "<group>"; };
+		21818F4EFA7E2B695FA5AFF8 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
+		21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZDStickerView-Private.xcconfig"; sourceTree = "<group>"; };
+		3CD0F3977D29FDDEEF671015 /* ZDStickerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZDStickerView.bundle; path = ZDStickerView/ZDStickerView.bundle; sourceTree = "<group>"; };
+		3F726D9AAA61005E4FC8863E /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		465522882666AC3F1CFE5984 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		5C81D26BCA2ED21399182641 /* Pods-PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo.xcconfig"; sourceTree = "<group>"; };
+		62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		65B59888767D52AAC9D403E9 /* Pods-ZDStickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZDStickerView-dummy.m"; sourceTree = "<group>"; };
+		6A05B4E25A05769E46552F4D /* SPGripViewBorderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGripViewBorderView.h; path = ZDStickerView/SPGripViewBorderView.h; sourceTree = "<group>"; };
+		74FF2E794A86690EAB5084AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		7F750B6DA4F3D27CD26930DC /* ZDStickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZDStickerView.h; path = ZDStickerView/ZDStickerView.h; sourceTree = "<group>"; };
+		95AE90A5DC02335A56017462 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
+		A275E94471C22CCF5F30AE24 /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiplePulsingHaloLayer.h; path = PulsingHalo/MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
+		A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo-Private.xcconfig"; sourceTree = "<group>"; };
+		A93821689BAEC9F5562F9A90 /* libPods-PulsingHalo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PulsingHalo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE16918F38067F87D46D95A1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0A6F6152FDB2C3EE8C44790 /* Pods-PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PulsingHalo-dummy.m"; sourceTree = "<group>"; };
+		B855396B3F2C12B0E4546248 /* Pods-PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
+		DB5878DEF30570E7389DDCF7 /* ZDStickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZDStickerView.m; path = ZDStickerView/ZDStickerView.m; sourceTree = "<group>"; };
+		DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E30451747B7900F4454EFA51 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E9835BAD24851627BD026111 /* Pods-ZDStickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZDStickerView.xcconfig"; sourceTree = "<group>"; };
+		F67281618F0BD6A7AB7C10A0 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F7132ACA17426EE4257112C0 /* libPods-ZDStickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZDStickerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA049CCD2B677B3E490D088 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5A1ACEAEEFF0190F0F4502 /* Pods-ZDStickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZDStickerView-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		452CC6FD011BD7E89D016264 /* Frameworks */ = {
+		06D88E208C805CEF6D01E517 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1AB36922818717237AE3961 /* Foundation.framework in Frameworks */,
-				2E933EB3EE7D28CC2D91981D /* QuartzCore.framework in Frameworks */,
+				F6FFC9EF3D44CBFA388CBB17 /* Foundation.framework in Frameworks */,
+				9DB5A4CE5F49DED9852E2B5D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A15BB40CD1B2B9552266FDF /* Frameworks */ = {
+		3EBA8B01391CE527CCC4ED47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0556934156EC3CEA4EADD0 /* Foundation.framework in Frameworks */,
+				079E2985EB87251277A3FDDD /* Foundation.framework in Frameworks */,
+				F1E9904C121F5D73D4193DD8 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21CCDF6B9C6CE2E60DE54EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E72B3E07E8A8B66597E39114 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09F862F3B5CCDD492041B115 /* Products */ = {
+		47BE5BA56249C577173A74F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				931C1B9E5AACA186171E36FE /* libPods.a */,
-				2FB74E3D4D11AFA72264197B /* libPods-PulsingHalo.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		118AADA58F4483089CA9576E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0C29179E868AC47BF1C27D49 /* Foundation.framework */,
-				B322AB16C1E0CD6CC4968636 /* QuartzCore.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		39B6A173717B56A296C2E8AA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8448E0B259B658D3EB0D8D1D /* PulsingHalo */,
+				4AC70B0D8EEBF7E3736C1AC1 /* PulsingHalo */,
+				F900B237A58D2BA1AB9E2E2F /* ZDStickerView */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5B18CA5D3E3394CA5631EFE7 /* Support Files */ = {
+		4AC70B0D8EEBF7E3736C1AC1 /* PulsingHalo */ = {
 			isa = PBXGroup;
 			children = (
-				787486E3C20245F9A3530562 /* Pods-PulsingHalo.xcconfig */,
-				A8F5C63FE66C21B503671745 /* Pods-PulsingHalo-Private.xcconfig */,
-				8CA6D58311669707507C44E2 /* Pods-PulsingHalo-dummy.m */,
-				2D06E62247D5EBE04378D1AB /* Pods-PulsingHalo-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-PulsingHalo";
-			sourceTree = "<group>";
-		};
-		8448E0B259B658D3EB0D8D1D /* PulsingHalo */ = {
-			isa = PBXGroup;
-			children = (
-				0757B8F68AD5D8D75A5BD85D /* MultiplePulsingHaloLayer.h */,
-				595C65F0EF062BFD1D66D022 /* MultiplePulsingHaloLayer.m */,
-				C94CA3472E065CF7CD3E53C1 /* PulsingHaloLayer.h */,
-				B96EEF64DE1967C7E44083E4 /* PulsingHaloLayer.m */,
-				5B18CA5D3E3394CA5631EFE7 /* Support Files */,
+				A275E94471C22CCF5F30AE24 /* MultiplePulsingHaloLayer.h */,
+				187D5FC17351D9ECBD1C4B55 /* MultiplePulsingHaloLayer.m */,
+				95AE90A5DC02335A56017462 /* PulsingHaloLayer.h */,
+				21818F4EFA7E2B695FA5AFF8 /* PulsingHaloLayer.m */,
+				FF6C1AA08C605F35C85D8C7B /* Support Files */,
 			);
 			path = PulsingHalo;
 			sourceTree = "<group>";
 		};
-		89F69F0FE18062C1510CEE26 /* Pods */ = {
+		6C7D54CAAA339B3828BDA1B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A7955E28598B1610082FCD2C /* Pods-acknowledgements.markdown */,
-				E648FABA5520AE22DB07A9D0 /* Pods-acknowledgements.plist */,
-				D3B81DD3A8F18541C42170EE /* Pods-dummy.m */,
-				011FE5B0CDD2C689F3596F18 /* Pods-environment.h */,
-				F8EF0D29C5DE05739432326A /* Pods-resources.sh */,
-				BFEE606CDBF5C94789F2EE18 /* Pods.debug.xcconfig */,
-				B8732AEB0B06736356985665 /* Pods.release.xcconfig */,
+				3CD0F3977D29FDDEEF671015 /* ZDStickerView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		738954C3411FC6E3B5893D20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C10489A67F69BBF295CC5617 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		873E5971830B1BD2356D6078 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14DC12114B07D569DB9F9F66 /* Pods-acknowledgements.markdown */,
+				03F736F5D5C1F3A08AD52DD9 /* Pods-acknowledgements.plist */,
+				F67281618F0BD6A7AB7C10A0 /* Pods-dummy.m */,
+				465522882666AC3F1CFE5984 /* Pods-environment.h */,
+				3F726D9AAA61005E4FC8863E /* Pods-resources.sh */,
+				74FF2E794A86690EAB5084AC /* Pods.debug.xcconfig */,
+				E30451747B7900F4454EFA51 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		8F6F405D5A38D00E9E040A36 /* Frameworks */ = {
+		B406DD31DE8FE38F093A18BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				118AADA58F4483089CA9576E /* iOS */,
+				FBA049CCD2B677B3E490D088 /* libPods.a */,
+				A93821689BAEC9F5562F9A90 /* libPods-PulsingHalo.a */,
+				F7132ACA17426EE4257112C0 /* libPods-ZDStickerView.a */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		9284E9E9A3AA9854A603C006 = {
+		C10489A67F69BBF295CC5617 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				217A946FB05FB0BE5CDF0E53 /* Podfile */,
-				8F6F405D5A38D00E9E040A36 /* Frameworks */,
-				39B6A173717B56A296C2E8AA /* Pods */,
-				09F862F3B5CCDD492041B115 /* Products */,
-				A7FE4D9D489D293CA543C046 /* Targets Support Files */,
+				62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */,
+				DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E5A65C18B9957FB0C4388990 = {
+			isa = PBXGroup;
+			children = (
+				AE16918F38067F87D46D95A1 /* Podfile */,
+				738954C3411FC6E3B5893D20 /* Frameworks */,
+				47BE5BA56249C577173A74F1 /* Pods */,
+				B406DD31DE8FE38F093A18BE /* Products */,
+				F99AEBC439C2F83D1E8B3BC5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A7FE4D9D489D293CA543C046 /* Targets Support Files */ = {
+		F652479C6B168EC850E4BBBF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				89F69F0FE18062C1510CEE26 /* Pods */,
+				E9835BAD24851627BD026111 /* Pods-ZDStickerView.xcconfig */,
+				21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */,
+				65B59888767D52AAC9D403E9 /* Pods-ZDStickerView-dummy.m */,
+				FC5A1ACEAEEFF0190F0F4502 /* Pods-ZDStickerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ZDStickerView";
+			sourceTree = "<group>";
+		};
+		F900B237A58D2BA1AB9E2E2F /* ZDStickerView */ = {
+			isa = PBXGroup;
+			children = (
+				6A05B4E25A05769E46552F4D /* SPGripViewBorderView.h */,
+				20C46C0EF959C1295F997254 /* SPGripViewBorderView.m */,
+				7F750B6DA4F3D27CD26930DC /* ZDStickerView.h */,
+				DB5878DEF30570E7389DDCF7 /* ZDStickerView.m */,
+				6C7D54CAAA339B3828BDA1B8 /* Resources */,
+				F652479C6B168EC850E4BBBF /* Support Files */,
+			);
+			path = ZDStickerView;
+			sourceTree = "<group>";
+		};
+		F99AEBC439C2F83D1E8B3BC5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				873E5971830B1BD2356D6078 /* Pods */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FF6C1AA08C605F35C85D8C7B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5C81D26BCA2ED21399182641 /* Pods-PulsingHalo.xcconfig */,
+				A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */,
+				B0A6F6152FDB2C3EE8C44790 /* Pods-PulsingHalo-dummy.m */,
+				B855396B3F2C12B0E4546248 /* Pods-PulsingHalo-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PulsingHalo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		44BBADC0D3AB1AE01D5F0A85 /* Headers */ = {
+		8EC77E08861F691F835C7B45 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72B14F3FBB25AE79A05DCFA7 /* MultiplePulsingHaloLayer.h in Headers */,
-				5761FDA619EC4BE813EF2363 /* PulsingHaloLayer.h in Headers */,
+				C0D4322B46A2677F395888B8 /* SPGripViewBorderView.h in Headers */,
+				A3D866353B82DE227F876EFF /* ZDStickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A93EA9247B82C363AE065889 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB6E14762521E7466907640 /* MultiplePulsingHaloLayer.h in Headers */,
+				36D88033B6C5D89AF8CDE475 /* PulsingHaloLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		810E452C4AEEB216238796E0 /* Pods-PulsingHalo */ = {
+		0EA80FD506D8A31AA9DD93C7 /* Pods-PulsingHalo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1BA10CE4FEA80EB2BFC25F3 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */;
+			buildConfigurationList = AB2C79BAA754D6E8AC75B956 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */;
 			buildPhases = (
-				17C1022B6063F21D8F61EFD1 /* Sources */,
-				452CC6FD011BD7E89D016264 /* Frameworks */,
-				44BBADC0D3AB1AE01D5F0A85 /* Headers */,
+				82DF8086BA07BB3112B77AA9 /* Sources */,
+				3EBA8B01391CE527CCC4ED47 /* Frameworks */,
+				A93EA9247B82C363AE065889 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -193,84 +270,249 @@
 			);
 			name = "Pods-PulsingHalo";
 			productName = "Pods-PulsingHalo";
-			productReference = 2FB74E3D4D11AFA72264197B /* libPods-PulsingHalo.a */;
+			productReference = A93821689BAEC9F5562F9A90 /* libPods-PulsingHalo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D6ADC58D1169E78F9A00FD5D /* Pods */ = {
+		7CFFD38B5D219565653F2B1D /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8AF3270B70E3781E127B923 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 3F3A2E7828593E15E4D3E09C /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				089B0FCB79AFD40F9F870653 /* Sources */,
-				4A15BB40CD1B2B9552266FDF /* Frameworks */,
+				90468192553C2E38DDD1E1C6 /* Sources */,
+				D21CCDF6B9C6CE2E60DE54EB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				676601547B077EB45100677A /* PBXTargetDependency */,
+				0D70C4C6D185BB10D6061A0A /* PBXTargetDependency */,
+				C33D3CFF949D82189F1A4C24 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 931C1B9E5AACA186171E36FE /* libPods.a */;
+			productReference = FBA049CCD2B677B3E490D088 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C39528A7A494BF7DBED2BB0A /* Pods-ZDStickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFBE176EE1221F5B36EE04E /* Build configuration list for PBXNativeTarget "Pods-ZDStickerView" */;
+			buildPhases = (
+				9192AC58D294B702EC06CDD3 /* Sources */,
+				06D88E208C805CEF6D01E517 /* Frameworks */,
+				8EC77E08861F691F835C7B45 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ZDStickerView";
+			productName = "Pods-ZDStickerView";
+			productReference = F7132ACA17426EE4257112C0 /* libPods-ZDStickerView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CB0269CB6883CDD3924582F5 /* Project object */ = {
+		7FF57E5741E7CEFDBBEDC703 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 5BF3B4DBDF59731CE5052086 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 46663DEBC4506028FE825F2D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 9284E9E9A3AA9854A603C006;
-			productRefGroup = 09F862F3B5CCDD492041B115 /* Products */;
+			mainGroup = E5A65C18B9957FB0C4388990;
+			productRefGroup = B406DD31DE8FE38F093A18BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6ADC58D1169E78F9A00FD5D /* Pods */,
-				810E452C4AEEB216238796E0 /* Pods-PulsingHalo */,
+				7CFFD38B5D219565653F2B1D /* Pods */,
+				0EA80FD506D8A31AA9DD93C7 /* Pods-PulsingHalo */,
+				C39528A7A494BF7DBED2BB0A /* Pods-ZDStickerView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		089B0FCB79AFD40F9F870653 /* Sources */ = {
+		82DF8086BA07BB3112B77AA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF712080BEB71328FEA4160 /* Pods-dummy.m in Sources */,
+				F3A7617C918EB04FF1D85E6B /* MultiplePulsingHaloLayer.m in Sources */,
+				1BA6C4E0620EC63917820093 /* Pods-PulsingHalo-dummy.m in Sources */,
+				B79A35F657EAE02A1748EA7C /* PulsingHaloLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17C1022B6063F21D8F61EFD1 /* Sources */ = {
+		90468192553C2E38DDD1E1C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8CED8A798A9FB3C3D6AA2E /* MultiplePulsingHaloLayer.m in Sources */,
-				A1EEB23F6F779697741C4F50 /* Pods-PulsingHalo-dummy.m in Sources */,
-				EFD8715D74BEA3744E122E8D /* PulsingHaloLayer.m in Sources */,
+				AB218771F07B4C0EAABF59D3 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9192AC58D294B702EC06CDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7524A19F2F681187643BADE6 /* Pods-ZDStickerView-dummy.m in Sources */,
+				16F7BA202A21EC1C1F51B998 /* SPGripViewBorderView.m in Sources */,
+				F18D4D63387CB1AAB9F0A41B /* ZDStickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		676601547B077EB45100677A /* PBXTargetDependency */ = {
+		0D70C4C6D185BB10D6061A0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PulsingHalo";
-			target = 810E452C4AEEB216238796E0 /* Pods-PulsingHalo */;
-			targetProxy = 16CE811F4B0B9E879F1D0425 /* PBXContainerItemProxy */;
+			target = 0EA80FD506D8A31AA9DD93C7 /* Pods-PulsingHalo */;
+			targetProxy = 4F64E996C646A44C26AA75E2 /* PBXContainerItemProxy */;
+		};
+		C33D3CFF949D82189F1A4C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ZDStickerView";
+			target = C39528A7A494BF7DBED2BB0A /* Pods-ZDStickerView */;
+			targetProxy = D7BD41EA2B24A9AD45BFB838 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0905EC922E85007E42130A7C /* Debug */ = {
+		030C6432F8B9B7EF62BA03D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74FF2E794A86690EAB5084AC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		03D45F0C5F730C9EC6AFD87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		11C28E5AFA3C9A4FC25B7AC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZDStickerView/Pods-ZDStickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		39E530061562C45CC4C6F11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95BA74BA4C82E07DEF8C5D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30451747B7900F4454EFA51 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C3AC3FA6938E60E411F8BBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3EE93F1D450CE35904EC1B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZDStickerView/Pods-ZDStickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FDCF233A573B0372A0FF4F71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,135 +551,46 @@
 			};
 			name = Debug;
 		};
-		1716AB69B967003DF525162A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1BB0012F4F944E231404A73D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFEE606CDBF5C94789F2EE18 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		409C13BCBD897EF0A28A032B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8732AEB0B06736356985665 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		88C13E791BC039A0B3A4FC4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8F5C63FE66C21B503671745 /* Pods-PulsingHalo-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D9D21DEC933DB8B39339129A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8F5C63FE66C21B503671745 /* Pods-PulsingHalo-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BF3B4DBDF59731CE5052086 /* Build configuration list for PBXProject "Pods" */ = {
+		3F3A2E7828593E15E4D3E09C /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0905EC922E85007E42130A7C /* Debug */,
-				1716AB69B967003DF525162A /* Release */,
+				030C6432F8B9B7EF62BA03D4 /* Debug */,
+				95BA74BA4C82E07DEF8C5D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1BA10CE4FEA80EB2BFC25F3 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */ = {
+		46663DEBC4506028FE825F2D /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9D21DEC933DB8B39339129A /* Debug */,
-				88C13E791BC039A0B3A4FC4E /* Release */,
+				FDCF233A573B0372A0FF4F71 /* Debug */,
+				C3AC3FA6938E60E411F8BBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8AF3270B70E3781E127B923 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		4DFBE176EE1221F5B36EE04E /* Build configuration list for PBXNativeTarget "Pods-ZDStickerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BB0012F4F944E231404A73D /* Debug */,
-				409C13BCBD897EF0A28A032B /* Release */,
+				11C28E5AFA3C9A4FC25B7AC7 /* Debug */,
+				D3EE93F1D450CE35904EC1B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2C79BAA754D6E8AC75B956 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E530061562C45CC4C6F11C /* Debug */,
+				03D45F0C5F730C9EC6AFD87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CB0269CB6883CDD3924582F5 /* Project object */;
+	rootObject = 7FF57E5741E7CEFDBBEDC703 /* Project object */;
 }

@@ -8,9 +8,10 @@
 
 import UIKit
 
-class collectionViewWithHeaderViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class collectionViewWithHeaderViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
 
     var collev:UICollectionView!
+    var close = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,6 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         
         var clayout = UICollectionViewFlowLayout()
         clayout.scrollDirection = UICollectionViewScrollDirection.Vertical
-        clayout.itemSize = CGSize(width: 100, height: 100)
         clayout.headerReferenceSize = CGSize(width: mw, height: 30)
         
         collev = UICollectionView(frame: CGRect(x: 0, y: 0, width: mw, height: mh ),collectionViewLayout:clayout)
@@ -37,13 +37,15 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         // Dispose of any resources that can be recreated.
     }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        return 2
     }
-
+    
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
         if(indexPath.row % 2 == 0){
             cell.backgroundColor = UIColor.yellowColor()
+            
         }else{
             cell.backgroundColor = UIColor.greenColor()
         }
@@ -62,8 +64,79 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
             title.textColor = UIColor.whiteColor()
             title.textAlignment = NSTextAlignment.Center
             view.addSubview(title)
+            var close = UIButton(frame:CGRect(x: 0,y: 0,width: 70,height: view.frame.height))
+            close.setTitle("关闭", forState: UIControlState.Normal)
+            close.addTarget(self, action: "closeSection", forControlEvents: UIControlEvents.TouchUpInside)
+            view.addSubview(close)
+            
         }
         return view
+    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        var random = CGFloat(arc4random_uniform((UInt32(200))))
+        
+        
+        if(self.close && indexPath.section == 0){
+            return CGSizeMake(100, 0)
+        }else{
+            return CGSizeMake(100, 100)
+        }
+    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        if(self.close && section == 0){
+            return 0
+        }else{
+            return 3
+        }
+        
+    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat{
+        if(self.close && section == 0){
+            return 0
+        }else{
+            return 3
+        }
+
+    }
+    
+    func closeSection(){
+        
+        
+        collev.reloadData()
+        self.collev.collectionViewLayout.invalidateLayout()
+//        var clayout = UICollectionViewFlowLayout()
+//        clayout.scrollDirection = UICollectionViewScrollDirection.Vertical
+//        clayout.headerReferenceSize = CGSize(width: mw, height: 30)
+//        collev.setCollectionViewLayout(clayout, animated: true) { (finish:Bool) -> Void in
+//            self.close = self.close ? false : true
+//        }
+
+        
+        
+       collev.performBatchUpdates({ () -> Void in
+//            self.collev.collectionViewLayout.invalidateLayout()
+//            
+//            var clayout = UICollectionViewFlowLayout()
+//            clayout.scrollDirection = UICollectionViewScrollDirection.Vertical
+//            clayout.minimumLineSpacing = 0
+//            clayout.minimumInteritemSpacing = 0
+//
+//            
+//            if(self.close){
+//                clayout.itemSize = CGSize(width: 0, height: 0)
+//
+//            }else{
+//                clayout.itemSize = CGSize(width: 100, height: 100)
+//            }
+//
+//            clayout.headerReferenceSize = CGSize(width: mw, height: 30)
+//            self.collev.setCollectionViewLayout(clayout, animated: true)
+//            
+            }, completion: { (finish:Bool) -> Void in
+              self.close = self.close ? false : true
+      })
+        
+
     }
     /*
     // MARK: - Navigation

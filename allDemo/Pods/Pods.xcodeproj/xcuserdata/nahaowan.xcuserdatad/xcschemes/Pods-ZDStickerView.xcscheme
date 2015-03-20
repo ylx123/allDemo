@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0EA80FD506D8A31AA9DD93C7"
-               BuildableName = "libPods-PulsingHalo.a"
-               BlueprintName = "Pods-PulsingHalo"
+               BlueprintIdentifier = "C39528A7A494BF7DBED2BB0A"
+               BuildableName = "libPods-ZDStickerView.a"
+               BlueprintName = "Pods-ZDStickerView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
