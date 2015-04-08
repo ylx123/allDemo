@@ -1,3 +1,10 @@
 platform :ios, '7.0'
 pod 'PulsingHalo', :git => 'https://github.com/shu223/PulsingHalo.git'
-pod 'ZDStickerView', '~> 0.1.16'
+pod 'ZDStickerView'
+pod 'SDWebImage'
+pod 'CLImageEditor'
+pod 'CLImageEditor/ResizeTool'
+pod 'CLImageEditor/StickerTool'
+pod 'CLImageEditor/TextTool'
+pod 'CLImageEditor/SplashTool'
+pod "Regexer"

@@ -70,6 +70,7 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
             view.addSubview(close)
             
         }
+        
         return view
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {

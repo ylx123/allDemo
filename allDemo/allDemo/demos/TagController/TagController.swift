@@ -17,9 +17,9 @@ class TagController: UIViewController {
         
         var imgv = UIImageView(image: UIImage(named: "img1.jpg"))
         
-        imgv.frame = CGRect(x: 0, y: 100, width: mw, height: mw * imgv.frame.height / imgv.frame.width)
+        imgv.frame = CGRect(x: 25, y: 100, width: mw-50, height: mw * imgv.frame.height / imgv.frame.width)
         self.view.addSubview(imgv)
-        
+        imgv.layer.masksToBounds = true
         var tap = UITapGestureRecognizer(target: self, action: "tapedImg:")
         imgv.userInteractionEnabled = true
         imgv.addGestureRecognizer(tap)

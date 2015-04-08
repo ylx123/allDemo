@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-CLImageEditor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-PulsingHalo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Regexer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EA80FD506D8A31AA9DD93C7</key>
+		<key>30158AEBBF482E7D216346D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7CFFD38B5D219565653F2B1D</key>
+		<key>7B6D300A5D9EB2FAD9643FC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C39528A7A494BF7DBED2BB0A</key>
+		<key>830070A48F91C0F03F085075</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5020F2A492B918C57AFC878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CED120C92ED80CD9F5799133</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7CFCEBE4440585E03482DBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

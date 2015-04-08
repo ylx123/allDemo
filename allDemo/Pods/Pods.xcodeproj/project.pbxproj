@@ -7,297 +7,932 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		079E2985EB87251277A3FDDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */; };
-		16F7BA202A21EC1C1F51B998 /* SPGripViewBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C46C0EF959C1295F997254 /* SPGripViewBorderView.m */; };
-		1BA6C4E0620EC63917820093 /* Pods-PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A6F6152FDB2C3EE8C44790 /* Pods-PulsingHalo-dummy.m */; };
-		2CB6E14762521E7466907640 /* MultiplePulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A275E94471C22CCF5F30AE24 /* MultiplePulsingHaloLayer.h */; };
-		36D88033B6C5D89AF8CDE475 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 95AE90A5DC02335A56017462 /* PulsingHaloLayer.h */; };
-		7524A19F2F681187643BADE6 /* Pods-ZDStickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B59888767D52AAC9D403E9 /* Pods-ZDStickerView-dummy.m */; };
-		9DB5A4CE5F49DED9852E2B5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */; };
-		A3D866353B82DE227F876EFF /* ZDStickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F750B6DA4F3D27CD26930DC /* ZDStickerView.h */; };
-		AB218771F07B4C0EAABF59D3 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F67281618F0BD6A7AB7C10A0 /* Pods-dummy.m */; };
-		B79A35F657EAE02A1748EA7C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21818F4EFA7E2B695FA5AFF8 /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C0D4322B46A2677F395888B8 /* SPGripViewBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A05B4E25A05769E46552F4D /* SPGripViewBorderView.h */; };
-		E72B3E07E8A8B66597E39114 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */; };
-		F18D4D63387CB1AAB9F0A41B /* ZDStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5878DEF30570E7389DDCF7 /* ZDStickerView.m */; };
-		F1E9904C121F5D73D4193DD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */; };
-		F3A7617C918EB04FF1D85E6B /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D5FC17351D9ECBD1C4B55 /* MultiplePulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F6FFC9EF3D44CBFA388CBB17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */; };
+		0156A67464115E7892EF27C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEE6AE0AFA3C3B7EE21502D /* QuartzCore.framework */; };
+		01C85701E05501948FF05CA8 /* ZDStickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F7E73CF87AD24A600FA8DD /* ZDStickerView.h */; };
+		0277B659970D69C22DCECB8F /* CLTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3930EE7BF06318EDC157 /* CLTextLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		031F3A08FA55A04B3045EBB5 /* NSArray+Regexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 801146E9C1C878F8B653F6D2 /* NSArray+Regexer.h */; };
+		034FD6F65632C393C8267CCD /* CLSpotEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6113B414ED936A620456A2 /* CLSpotEffect.h */; };
+		04DFD67B17B26AB84C6324C5 /* CLColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B7F071DEB605807DAE60CA /* CLColorPickerView.h */; };
+		0509E71F3F8B980B3C5C9A84 /* UIView+CLImageToolInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA30D6808CB998F941EC08B /* UIView+CLImageToolInfo.h */; };
+		07DE8D829DB1CA853D9CBB5A /* CLPickerDrum.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B53E75224B1E95AA5C4AD /* CLPickerDrum.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		084224E147FF86A6DAF8184A /* CLPixellateEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7E7AF70DC7B7FA663DBA1C /* CLPixellateEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0B062DE2F0966105795A5CE5 /* Pods-PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 807D4FBC7554E5D807B482D8 /* Pods-PulsingHalo-dummy.m */; };
+		0C1BCCBC84F4631F907C905C /* NSString+Regexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEB1EDEE2C7C8E1E0EAB2D4 /* NSString+Regexer.h */; };
+		0C6EA7C7B40A248EBFF3EAA6 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77A4099516838436CFDA90 /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0E65FBBF0CE0CFE42C8D904E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD29E27D1EB8B534E9D16532 /* Foundation.framework */; };
+		0F635A7830999690112E94B6 /* ZDStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E029332F72ED16CBF8DE34F2 /* ZDStickerView.m */; };
+		125984996253B90A275F6BEC /* CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03C69605D614DF8B65758C /* CLImageToolInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		12DE8A682DD388B8D0AD4949 /* CLEffectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED1DC727CE19A7792A686B6 /* CLEffectBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1A9F420A47B2724294B848C5 /* UIDevice+SystemVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A31A5A5A91915774DB81A3E /* UIDevice+SystemVersion.h */; };
+		1AA846482520647605E7E9DE /* CLImageToolInfo+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4679A4FB79CEEAE68FEF5E41 /* CLImageToolInfo+Private.h */; };
+		1BA996D021BF80093186F2FA /* CLImageToolBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D65385ACFD7CB6592F3F2FD /* CLImageToolBase.h */; };
+		1BD4FA8AA751BDCE72F09055 /* CLEffectTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C0E4E0312292E8E3A86D865 /* CLEffectTool.h */; };
+		1D0F81D5F46BDA6A1B4B2FE0 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 238B9804D28541C3926831E0 /* SDWebImageOperation.h */; };
+		1ED86D0969CF8F05C4807007 /* CLImageEditorTheme+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B72E43189CEB837B83F69 /* CLImageEditorTheme+Private.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20A81DB645AEB2E95501EA3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD29E27D1EB8B534E9D16532 /* Foundation.framework */; };
+		24318C8B1FF5D7303B274D08 /* CLPickerDrum.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA75A9B8B882FE5BD291D81 /* CLPickerDrum.h */; };
+		25F67EE8C4D94BEA3E591E9D /* CLToolbarMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9844223BE368F580D6CDF929 /* CLToolbarMenuItem.h */; };
+		2C27E771FD7D9BF567238009 /* CLTextTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4922FE02F2027B1D37521A /* CLTextTool.h */; };
+		2DC16D45B5B1BAD60E3E5D92 /* CLPosterizeEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5C4AE3BDFA33645034D0A2 /* CLPosterizeEffect.h */; };
+		2E1BE8FD7C0B92C7521257B5 /* CLImageEditorTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCC9B1AC4A43732863831EE /* CLImageEditorTheme.h */; };
+		2E729CD3F276030B6028B2AE /* CLHighlightShadowEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8465BDBCCD2B71FF499A7C81 /* CLHighlightShadowEffect.h */; };
+		3038B64B52EA33E615D418E1 /* CLRotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7B4192AF80C1FB80A23CD /* CLRotateTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		34496D93A9505FFDF475626B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72E9008847007E6153F123C /* ImageIO.framework */; };
+		34E249A27E5FC1C2A89F1C72 /* CLSplineInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = A88449ECF9C9721BE81E67FE /* CLSplineInterpolator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		353E418C2D153C51B9EA07A4 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDACDFDB7995BA1CF100129 /* Pods-dummy.m */; };
+		379EC2820E487AD05A32A124 /* CLToneCurveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4516DBC448FC228FCFF3D8 /* CLToneCurveTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		39F8A80C345B8B9ECDF9C1DA /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E9F07111202325D42FBC22 /* UIImageView+WebCache.h */; };
+		39FA7864F3C4DE3185D27F92 /* NSString+Regexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 151A7EE1957F41AB94F27754 /* NSString+Regexer.m */; };
+		3A89C730EF44BC78EEEF5DDA /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D85EC630598774A255498 /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B665B5780A2FDBD3F63609D /* CLPixellateEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 499B27A340A1BE4028C25A0B /* CLPixellateEffect.h */; };
+		3BD4DE48F8B56591CFD05AEA /* CLImageToolInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC58C873F7C0EA4AFEC519 /* CLImageToolInfo+Private.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		43F4698031F56A5D49296FC1 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F49EBE5AAB371594A7E018 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		47425A4888DA02384DA09285 /* CLTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D69F7D7F30D7F77A67BE89 /* CLTextTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		486A88221CDA6E5EC24890B3 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBB8F3EDC8C16CB92856FA4 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A58C85C6E616EF0FCC98272 /* CLTextSettingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D3D61C6613B0FE5C413CE6 /* CLTextSettingView.h */; };
+		4BB9F9D70E98EC50564D2D64 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC41CA94907E24E32832323 /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5089CFA5104ECCE455A7AAD4 /* SPGripViewBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F4E296D78C4EC4000DBA57 /* SPGripViewBorderView.m */; };
+		51CDF3DBF9481C0E87F20055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD29E27D1EB8B534E9D16532 /* Foundation.framework */; };
+		528DC7D9217D05F11518315B /* CLImageToolSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EB12643497240691204843 /* CLImageToolSettings.h */; };
+		53D7A7F30259A8FB7CDFBB1F /* MultiplePulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D8B2352D778D9E6FC664CE /* MultiplePulsingHaloLayer.h */; };
+		54502AAF971DFFF11A17D4FD /* RXCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ADB67311ECDF305B107A3B8 /* RXCapture.h */; };
+		54640CC47E8F1BBA06D2A669 /* CLFilterBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B41AB9E1811311A835B6C24 /* CLFilterBase.h */; };
+		550C6AD3860DA5A28C7D03C2 /* UIImage+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BC2C1FA40603CEB218890A /* UIImage+Utility.h */; };
+		56E6B7F0C55749B20107B92A /* CLAdjustmentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 98859A71D0517767E687CDD1 /* CLAdjustmentTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B5035852E65C377DE1EF1F6 /* CLFilterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B88B10EECE00E6F4C069091C /* CLFilterBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B5FA05310D234BC48612F5C /* CLAdjustmentTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 82AEF97691637AA54EF05B61 /* CLAdjustmentTool.h */; };
+		5B6EE4A36CB9979DEAC4E45C /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 59898D58934F8318F730FDCE /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5BC70EB5A393DBEC73F58543 /* CLClippingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D418230FABB8B0325F1C71DD /* CLClippingTool.h */; };
+		60D2637E6E04F37E4D056919 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE4D1FF341ADEF56BD9518 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63C739613506C41EC5E03D84 /* CLImageEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF7445EB0B52E58EEB91120 /* CLImageEditor.h */; };
+		663591DDD9DA1C8C98596740 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF80CFEFA4AFB5694374834 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6BB47F69019C431FBD8A3963 /* RXCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9845DA5904F7A54B50672B58 /* RXCapture.m */; };
+		7018F4ADD1369DE148597BF7 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 06007D02DECDE7FE730F7618 /* SDWebImageDownloader.h */; };
+		72280F9F578B25808920551B /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5BF22D267A8FD33B056A28 /* PulsingHaloLayer.h */; };
+		7256BB4DEDE3B4CD5AE9DF39 /* MultiplePulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD330B8A924149080C0D6B56 /* MultiplePulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		74077CC2AD1B792F49B976EF /* CLGloomEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 517EAF3347BACCCCBCEE21B4 /* CLGloomEffect.h */; };
+		755D5F7A63B97A4D8EE1B937 /* Pods-Regexer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A7B7D021099D0DE28A0A87 /* Pods-Regexer-dummy.m */; };
+		785E35793C9163BCC8D9AE6B /* CLFilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB25D8672C2F12E92544E577 /* CLFilterTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A4E5011621B3864C6FE1521 /* CLGloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A04A64E9B301ECFF87B13C /* CLGloomEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7EB61DA0A6DF3365C87F0F96 /* CLRotateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5308304234CDB80E5868D555 /* CLRotateTool.h */; };
+		8091AFE32933D60BB1183F81 /* CLSpotEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D85DF0C6C20B981A2C9BC6 /* CLSpotEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		81D2A12754BF5F07FB4C2724 /* CLStickerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FAD5A303DC6EBAD9A376C0 /* CLStickerTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		825A68E8FC061865AD450DCF /* CLClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB27DB7D38537ADF782E229 /* CLClassList.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8414A741E9C98B3D3BD8AEF7 /* CLSplashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B5AE7E46CFF957A340C29B /* CLSplashTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		869FF63D034362C94824F8FC /* CLHueEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E2D6141CD5B7BC8835FC973 /* CLHueEffect.h */; };
+		87E31D1DCCFF533F3228D86D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA93086D98CA4655D1B4681 /* Accelerate.framework */; };
+		883CA86D6DAAA2F6069BAB57 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BB95CCA37A32EDCE81DE9110 /* UIImageView+HighlightedWebCache.h */; };
+		8845EC34F386DA994287319E /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C5ACD0C5C5AB819A6D64EFDB /* SDWebImagePrefetcher.h */; };
+		8870862F40C292BF40632E37 /* CLPosterizeEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC8B82C188AFE26A5D40DE /* CLPosterizeEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		88B1463C01AB98692BBE0E03 /* CLImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F54B723C6C6A461944A4F /* CLImageEditor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		890CBD084950A922D4863DFD /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 362F72B6589CED0B27BE1E14 /* SDWebImageDecoder.h */; };
+		8998B2973684CF9E93A4D29A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C46D139A2585168FB3AFC03 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8B210DE86F4C53C1DDED6AA2 /* CLDrawTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A768B0DACB20FC8239784F /* CLDrawTool.h */; };
+		8DFCED644A2B8F1507FFF54D /* CLDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C5A030D96A4D4D78DDC3AF /* CLDrawTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8F6EB4C85F6A880745D44422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD29E27D1EB8B534E9D16532 /* Foundation.framework */; };
+		934BCA6F8BD0C3353CA29C60 /* RXRegexCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B575C2764AACCBEA6DFE8DA1 /* RXRegexCache.h */; };
+		93F67F0BD2306BBDE11507A9 /* CLHueEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6EB06046FBD72EA55008F9 /* CLHueEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		95A231A3424C8C1BB0015782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD29E27D1EB8B534E9D16532 /* Foundation.framework */; };
+		95CB3EE0AE8FECAE4E741809 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C35381BE598EAA00E989A829 /* SDImageCache.h */; };
+		980D08FACC3EFA42B4E80C4F /* CLImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F0F8A63B4B02CA501E60FE /* CLImageToolBase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9ACD007BD9EAF793592F5000 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FA652F40BCAA14E2DDB629 /* UIView+Frame.h */; };
+		9BE83DDB57FC1435B7CE6DBB /* NSArray+Regexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E6AC80F0E42193D72161D4 /* NSArray+Regexer.m */; };
+		9D202A6E2D79FFE13905E30E /* CLTextLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E0AB3E35D57EE52E163373 /* CLTextLabel.h */; };
+		9D4F92C7C1389C6C1B4ED602 /* CLFilterTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F71F1BA4074BE46F3E1C9696 /* CLFilterTool.h */; };
+		9E0605F881B5108950D2C360 /* Pods-SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC3BD8CF0B645884536D810 /* Pods-SDWebImage-dummy.m */; };
+		A17090D829B57A7C800F0716 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 311CF48DEE2C5B199BD1272A /* SDWebImageManager.h */; };
+		A295843C59DD3EA96466CE6A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E1463B014D694B646BCFC30C /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A465DDC039EDC29AE046DD16 /* CLFontPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F6A0DA3941D49FBB200E9C /* CLFontPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A59823645888CFF93EB91B9C /* CLTextSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C7538689F29AB50A53C46 /* CLTextSettingView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A63F94F1217850414618BB0F /* Pods-ZDStickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D520069BB07065BABFACF53B /* Pods-ZDStickerView-dummy.m */; };
+		A86DEAFA56DD8570E4E937F2 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = D17A877ADEDF8E9E71D1490D /* SDWebImageCompat.h */; };
+		A9E3E910EF3F73A3877252FE /* CLFontPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C0794E3154ECC4F36EC595A /* CLFontPickerView.h */; };
+		AA8F4081890DB542E54376F2 /* CLPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = EA76D6C18250699D038B4EA4 /* CLPickerView.h */; };
+		AAFADC8F157A9AD5FBF5A194 /* CLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB527E00FC569BB7455BF8D /* CLCircleView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ABDEB697129216DA1A563A78 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 228B90136D4C97C9E0EF3EAC /* SDWebImageDownloaderOperation.h */; };
+		AD5B71CEF5326168AF63CF82 /* RXMatch.h in Headers */ = {isa = PBXBuildFile; fileRef = B96DF017DE45D7D68F5CA736 /* RXMatch.h */; };
+		AD636C810745696E82E79BDB /* CLResizeTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7E038D780787ED6D7E1F64 /* CLResizeTool.h */; };
+		B11D258F74D22B943B19F0A4 /* CLResizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE2747B8BE84DC96919BE71 /* CLResizeTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B35978E41076A1D13896767D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A137053DEF6C4F751B1DE6 /* UIView+Frame.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B418CB9F57E90290531470A1 /* CLStickerTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B162F539AC1E09918D56D604 /* CLStickerTool.h */; };
+		B534300056031838867CA2E6 /* SPGripViewBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0D5AF700FFD5BFE75D13DB /* SPGripViewBorderView.h */; };
+		B78C4F35CB1105CA03E6C47E /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0338845F520E31AE1C947A03 /* UIButton+WebCache.h */; };
+		B8FF931195F16BB81C56391E /* CLImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E7100686516FAD03B29DF0 /* CLImageEditorTheme.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BA26EAEA594635A6CCB9DF6D /* UIView+CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 20371047200220F3054F76E0 /* UIView+CLImageToolInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BB3F5CF347764E95CB5BE1E8 /* CLHighlightShadowEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 16544BC0D7F4FBACC3D8BBA7 /* CLHighlightShadowEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BC8F42993970EF608CFA7758 /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B7E75149A9D8D2C81817FE /* UIDevice+SystemVersion.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BC97AABEAF896F993C14F6AE /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = A093086773686AE6163C6693 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDB29F0AEC56EC8D1455093F /* CLClippingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A80C1A08992D754BE0B0F /* CLClippingTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE95FAE283E85E93260CE79D /* CLBloomEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 0229EAAF39FB969AB399EF07 /* CLBloomEffect.h */; };
+		C012A8B240D9A1489ACD4BAB /* CLCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 929B196CFECA28E14ABF21C6 /* CLCircleView.h */; };
+		C1A84D134F14994F5E934EFA /* CLToolbarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D04DA1E3E2ABAC5DA97CF20 /* CLToolbarMenuItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C2472D00358A40F3BCDFF8F8 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 954A65E5C8821EBB73BD62ED /* NSData+ImageContentType.h */; };
+		C50FC75D39FF76A48E6A887D /* CLColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 447ED836A7B65AA02926D084 /* CLColorPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C5B9BB575180C44F640D2292 /* CLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8767F1EBFA1221FCB94F7F6F /* CLPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CAF7E7C31BDC155D9BDC20DA /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 287B3C15831A5CF2BE35505D /* UIImage+MultiFormat.h */; };
+		CC02614C5A2AEF88551E0FAF /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D737575CD2DED0D02AC8BBAD /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CDF91A1EA5531013F1EC198B /* CLEffectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D71DA7A23FC87BFD669FB3 /* CLEffectTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CE30151A6EAE4B9552A002DE /* CLBloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D98E48B50B406C12F1A7A33 /* CLBloomEffect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CEB4D3EA6E31624BC2B7E9F5 /* CLToneCurveTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 486C0384953C03C9967B9595 /* CLToneCurveTool.h */; };
+		CF91971674D81D0EC4D86F1C /* _CLImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6C2CC38DD7F258170285D /* _CLImageEditorViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D286737C618BD188F6FC269D /* Pods-CLImageEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7135929875D49D9F6AF7CEE /* Pods-CLImageEditor-dummy.m */; };
+		D2DB9389CE207E6BCE39E538 /* CLClassList.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5255C9F02FBE64D6D754B9 /* CLClassList.h */; };
+		D350582C26629DC84E67CF10 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD049B7954A46008207AAC2 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D45FE64B9A277BD6316F1E7D /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B149B588375B9DC260260 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D6DED200C8910C5AC5E3CAC8 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 939ECBD0DE0833B5DB5500B3 /* UIImage+Utility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D708E6FB177BA24A57A2708D /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B94859486BEB7C7A2948C01E /* UIView+WebCacheOperation.h */; };
+		D8511BA62E0A936DD5C21A17 /* CLImageToolProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB9FAD6F01D243E27F22D69 /* CLImageToolProtocol.h */; };
+		DD470760CCB99CAFAD1393BC /* CLBlurTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DE5BD73AD75DC7F3F62A32 /* CLBlurTool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DFC0350EFC2FE66129E7ECE4 /* CLEffectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE96E2282AA5E1066563358 /* CLEffectBase.h */; };
+		E235414A9B772B22FFDB3B95 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FEE6AE0AFA3C3B7EE21502D /* QuartzCore.framework */; };
+		E454DFAB7703CDA86AF20490 /* _CLImageEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BABD8E759381A2D73D56EFF /* _CLImageEditorViewController.h */; };
+		E65D5A74571E751B1B644125 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274BBF2425F5D93C7927565B /* CoreGraphics.framework */; };
+		E7067260A202626B6401F3F2 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7BFFD447FEC922E660F692 /* CoreImage.framework */; };
+		EB1B8A413F1A7DE7CF42A795 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD29E27D1EB8B534E9D16532 /* Foundation.framework */; };
+		ECB10940520B574111802A4F /* CLImageEditorTheme+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B1BF362C72D03F8E4438F8 /* CLImageEditorTheme+Private.h */; };
+		ED391C82821656A1914EC811 /* Regexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 66256F6EBE3650BE93776D4E /* Regexer.h */; };
+		EE69A80F452381AA544B935C /* CLBlurTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A05E52B085E83DC3A54F0E /* CLBlurTool.h */; };
+		EF4499D20CD1580D80C5D8C7 /* CLSplashTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DF67D48A22428D7DBCF74209 /* CLSplashTool.h */; };
+		EF7F2441A0C21CB8AC2D17CD /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8D42753D6FDBA7A08FF5F /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F5C34070D3188BD57EC86EB3 /* RXRegexCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2087D27CB234D040426F078C /* RXRegexCache.m */; };
+		F7A03A379C1E91D00FC0F242 /* CLSplineInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 353FAF0B7EF4E18D28400336 /* CLSplineInterpolator.h */; };
+		FC956B9648B98751A3F116AC /* RXMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2F680312EF5FE43F6F8650 /* RXMatch.m */; };
+		FD3AFAAABA78D9F07C8B3081 /* CLImageToolInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF381D69A84A5B9457E85E9 /* CLImageToolInfo.h */; };
+		FE3DD2D09D7EBF21D2A899D6 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CB68C19A4BB072E37CDD64 /* UIImage+GIF.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4F64E996C646A44C26AA75E2 /* PBXContainerItemProxy */ = {
+		3CE1FFCE4AA79E8A8EC97628 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7FF57E5741E7CEFDBBEDC703 /* Project object */;
+			containerPortal = FE091B3BD74CE32F804BCF3D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0EA80FD506D8A31AA9DD93C7;
+			remoteGlobalIDString = 830070A48F91C0F03F085075;
+			remoteInfo = "Pods-CLImageEditor";
+		};
+		4CC6B47746441253C518087B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE091B3BD74CE32F804BCF3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30158AEBBF482E7D216346D2;
+			remoteInfo = "Pods-ZDStickerView";
+		};
+		588E400AC8E36998DB754A01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE091B3BD74CE32F804BCF3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B6D300A5D9EB2FAD9643FC3;
 			remoteInfo = "Pods-PulsingHalo";
 		};
-		D7BD41EA2B24A9AD45BFB838 /* PBXContainerItemProxy */ = {
+		6C8A527CD4CFA8CDB984E2A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7FF57E5741E7CEFDBBEDC703 /* Project object */;
+			containerPortal = FE091B3BD74CE32F804BCF3D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C39528A7A494BF7DBED2BB0A;
-			remoteInfo = "Pods-ZDStickerView";
+			remoteGlobalIDString = E7CFCEBE4440585E03482DBA;
+			remoteInfo = "Pods-SDWebImage";
+		};
+		8D9D8745339A3152AA5C5D2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE091B3BD74CE32F804BCF3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5020F2A492B918C57AFC878;
+			remoteInfo = "Pods-Regexer";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F736F5D5C1F3A08AD52DD9 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		14DC12114B07D569DB9F9F66 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		187D5FC17351D9ECBD1C4B55 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiplePulsingHaloLayer.m; path = PulsingHalo/MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
-		20C46C0EF959C1295F997254 /* SPGripViewBorderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGripViewBorderView.m; path = ZDStickerView/SPGripViewBorderView.m; sourceTree = "<group>"; };
-		21818F4EFA7E2B695FA5AFF8 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
-		21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZDStickerView-Private.xcconfig"; sourceTree = "<group>"; };
-		3CD0F3977D29FDDEEF671015 /* ZDStickerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZDStickerView.bundle; path = ZDStickerView/ZDStickerView.bundle; sourceTree = "<group>"; };
-		3F726D9AAA61005E4FC8863E /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		465522882666AC3F1CFE5984 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		5C81D26BCA2ED21399182641 /* Pods-PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo.xcconfig"; sourceTree = "<group>"; };
-		62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		65B59888767D52AAC9D403E9 /* Pods-ZDStickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZDStickerView-dummy.m"; sourceTree = "<group>"; };
-		6A05B4E25A05769E46552F4D /* SPGripViewBorderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGripViewBorderView.h; path = ZDStickerView/SPGripViewBorderView.h; sourceTree = "<group>"; };
-		74FF2E794A86690EAB5084AC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		7F750B6DA4F3D27CD26930DC /* ZDStickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZDStickerView.h; path = ZDStickerView/ZDStickerView.h; sourceTree = "<group>"; };
-		95AE90A5DC02335A56017462 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
-		A275E94471C22CCF5F30AE24 /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiplePulsingHaloLayer.h; path = PulsingHalo/MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
-		A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo-Private.xcconfig"; sourceTree = "<group>"; };
-		A93821689BAEC9F5562F9A90 /* libPods-PulsingHalo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PulsingHalo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE16918F38067F87D46D95A1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B0A6F6152FDB2C3EE8C44790 /* Pods-PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PulsingHalo-dummy.m"; sourceTree = "<group>"; };
-		B855396B3F2C12B0E4546248 /* Pods-PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
-		DB5878DEF30570E7389DDCF7 /* ZDStickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZDStickerView.m; path = ZDStickerView/ZDStickerView.m; sourceTree = "<group>"; };
-		DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E30451747B7900F4454EFA51 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		E9835BAD24851627BD026111 /* Pods-ZDStickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZDStickerView.xcconfig"; sourceTree = "<group>"; };
-		F67281618F0BD6A7AB7C10A0 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F7132ACA17426EE4257112C0 /* libPods-ZDStickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZDStickerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBA049CCD2B677B3E490D088 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC5A1ACEAEEFF0190F0F4502 /* Pods-ZDStickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZDStickerView-prefix.pch"; sourceTree = "<group>"; };
+		0229EAAF39FB969AB399EF07 /* CLBloomEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLBloomEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLBloomEffect.h; sourceTree = "<group>"; };
+		02541AC910EFE7438B48DE49 /* Pods-CLImageEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLImageEditor.xcconfig"; sourceTree = "<group>"; };
+		0338845F520E31AE1C947A03 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		0396F93FCBC09267AAC64BDF /* Pods-Regexer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Regexer-Private.xcconfig"; sourceTree = "<group>"; };
+		03A768B0DACB20FC8239784F /* CLDrawTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLDrawTool.h; path = CLImageEditor/ImageTools/CLDrawTool/CLDrawTool.h; sourceTree = "<group>"; };
+		06007D02DECDE7FE730F7618 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		09A04A64E9B301ECFF87B13C /* CLGloomEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLGloomEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLGloomEffect.m; sourceTree = "<group>"; };
+		0B2B72E43189CEB837B83F69 /* CLImageEditorTheme+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLImageEditorTheme+Private.m"; path = "CLImageEditor/ImageTools/ToolSettings/CLImageEditorTheme+Private.m"; sourceTree = "<group>"; };
+		0DE5E88F63D1A5DB313918C5 /* libPods-ZDStickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZDStickerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCC9B1AC4A43732863831EE /* CLImageEditorTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLImageEditorTheme.h; path = CLImageEditor/CLImageEditorTheme.h; sourceTree = "<group>"; };
+		0FF381D69A84A5B9457E85E9 /* CLImageToolInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLImageToolInfo.h; path = CLImageEditor/CLImageToolInfo.h; sourceTree = "<group>"; };
+		10CB68C19A4BB072E37CDD64 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		10FAD5A303DC6EBAD9A376C0 /* CLStickerTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLStickerTool.m; path = OptionalImageTools/CLStickerTool/CLStickerTool.m; sourceTree = "<group>"; };
+		11D8B2352D778D9E6FC664CE /* MultiplePulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultiplePulsingHaloLayer.h; path = PulsingHalo/MultiplePulsingHaloLayer.h; sourceTree = "<group>"; };
+		12D71DA7A23FC87BFD669FB3 /* CLEffectTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLEffectTool.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffectTool.m; sourceTree = "<group>"; };
+		14D85DF0C6C20B981A2C9BC6 /* CLSpotEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLSpotEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLSpotEffect.m; sourceTree = "<group>"; };
+		151A7EE1957F41AB94F27754 /* NSString+Regexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Regexer.m"; path = "Regexer/Source/NSString+Regexer.m"; sourceTree = "<group>"; };
+		16544BC0D7F4FBACC3D8BBA7 /* CLHighlightShadowEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLHighlightShadowEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLHighlightShadowEffect.m; sourceTree = "<group>"; };
+		169A5F07833E2BDDFCD7BE14 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171A264EEBB9F413F4E9FB60 /* Pods-SDWebImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDWebImage-Private.xcconfig"; sourceTree = "<group>"; };
+		19F7E73CF87AD24A600FA8DD /* ZDStickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZDStickerView.h; path = ZDStickerView/ZDStickerView.h; sourceTree = "<group>"; };
+		1AF80CFEFA4AFB5694374834 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		1BC41CA94907E24E32832323 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		1D5BF22D267A8FD33B056A28 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
+		1D65385ACFD7CB6592F3F2FD /* CLImageToolBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLImageToolBase.h; path = CLImageEditor/ImageTools/CLImageToolBase.h; sourceTree = "<group>"; };
+		1D8C7538689F29AB50A53C46 /* CLTextSettingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLTextSettingView.m; path = OptionalImageTools/CLTextTool/CLTextSettingView.m; sourceTree = "<group>"; };
+		1F03C69605D614DF8B65758C /* CLImageToolInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLImageToolInfo.m; path = CLImageEditor/CLImageToolInfo.m; sourceTree = "<group>"; };
+		1FD049B7954A46008207AAC2 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		20371047200220F3054F76E0 /* UIView+CLImageToolInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CLImageToolInfo.m"; path = "CLImageEditor/ImageTools/ToolSettings/UIView+CLImageToolInfo.m"; sourceTree = "<group>"; };
+		2087D27CB234D040426F078C /* RXRegexCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RXRegexCache.m; path = Regexer/Source/RXRegexCache.m; sourceTree = "<group>"; };
+		228B90136D4C97C9E0EF3EAC /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		238B9804D28541C3926831E0 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		23C085FA81F2EB07FBB3261B /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		262F54B723C6C6A461944A4F /* CLImageEditor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLImageEditor.m; path = CLImageEditor/CLImageEditor.m; sourceTree = "<group>"; };
+		274BBF2425F5D93C7927565B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		27B79F01CA9C9DEBA526AA12 /* ZDStickerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZDStickerView.bundle; path = ZDStickerView/ZDStickerView.bundle; sourceTree = "<group>"; };
+		287B3C15831A5CF2BE35505D /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		30B4FA7B93A131D964781796 /* libPods-CLImageEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CLImageEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D3D61C6613B0FE5C413CE6 /* CLTextSettingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLTextSettingView.h; path = OptionalImageTools/CLTextTool/CLTextSettingView.h; sourceTree = "<group>"; };
+		31143CFF04993594009E5E1D /* Pods-CLImageEditor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CLImageEditor-Private.xcconfig"; sourceTree = "<group>"; };
+		311CF48DEE2C5B199BD1272A /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		353FAF0B7EF4E18D28400336 /* CLSplineInterpolator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSplineInterpolator.h; path = CLImageEditor/Utils/CLSplineInterpolator.h; sourceTree = "<group>"; };
+		35A7B7D021099D0DE28A0A87 /* Pods-Regexer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Regexer-dummy.m"; sourceTree = "<group>"; };
+		362F72B6589CED0B27BE1E14 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		3B7BFFD447FEC922E660F692 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		3CA30D6808CB998F941EC08B /* UIView+CLImageToolInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CLImageToolInfo.h"; path = "CLImageEditor/ImageTools/ToolSettings/UIView+CLImageToolInfo.h"; sourceTree = "<group>"; };
+		3ECE4D1FF341ADEF56BD9518 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		3FEE6AE0AFA3C3B7EE21502D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		43F6A0DA3941D49FBB200E9C /* CLFontPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLFontPickerView.m; path = OptionalImageTools/CLTextTool/CLFontPickerView.m; sourceTree = "<group>"; };
+		447ED836A7B65AA02926D084 /* CLColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLColorPickerView.m; path = CLImageEditor/ImageTools/ToolSettings/CLColorPickerView.m; sourceTree = "<group>"; };
+		4679A4FB79CEEAE68FEF5E41 /* CLImageToolInfo+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLImageToolInfo+Private.h"; path = "CLImageEditor/ImageTools/ToolSettings/CLImageToolInfo+Private.h"; sourceTree = "<group>"; };
+		486C0384953C03C9967B9595 /* CLToneCurveTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLToneCurveTool.h; path = CLImageEditor/ImageTools/CLToneCurveTool/CLToneCurveTool.h; sourceTree = "<group>"; };
+		499B27A340A1BE4028C25A0B /* CLPixellateEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLPixellateEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLPixellateEffect.h; sourceTree = "<group>"; };
+		49A137053DEF6C4F751B1DE6 /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Frame.m"; path = "CLImageEditor/Utils/UIView+Frame.m"; sourceTree = "<group>"; };
+		4AC6C2CC38DD7F258170285D /* _CLImageEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _CLImageEditorViewController.m; path = CLImageEditor/ViewController/_CLImageEditorViewController.m; sourceTree = "<group>"; };
+		4ADB67311ECDF305B107A3B8 /* RXCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RXCapture.h; path = Regexer/Source/RXCapture.h; sourceTree = "<group>"; };
+		4BABD8E759381A2D73D56EFF /* _CLImageEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _CLImageEditorViewController.h; path = CLImageEditor/ViewController/_CLImageEditorViewController.h; sourceTree = "<group>"; };
+		4BBB8F3EDC8C16CB92856FA4 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		4BE96E2282AA5E1066563358 /* CLEffectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLEffectBase.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffectBase.h; sourceTree = "<group>"; };
+		517EAF3347BACCCCBCEE21B4 /* CLGloomEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLGloomEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLGloomEffect.h; sourceTree = "<group>"; };
+		52B0EDE9BFBB1C46E1E5DC71 /* Pods-Regexer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Regexer-prefix.pch"; sourceTree = "<group>"; };
+		5308304234CDB80E5868D555 /* CLRotateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLRotateTool.h; path = CLImageEditor/ImageTools/CLRotateTool/CLRotateTool.h; sourceTree = "<group>"; };
+		58BC58C873F7C0EA4AFEC519 /* CLImageToolInfo+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLImageToolInfo+Private.m"; path = "CLImageEditor/ImageTools/ToolSettings/CLImageToolInfo+Private.m"; sourceTree = "<group>"; };
+		59898D58934F8318F730FDCE /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		5B41AB9E1811311A835B6C24 /* CLFilterBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLFilterBase.h; path = CLImageEditor/ImageTools/CLFilterTool/CLFilterBase.h; sourceTree = "<group>"; };
+		5BACB3A1121884D5F0FDEE7F /* CLImageEditor.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CLImageEditor.bundle; path = CLImageEditor/CLImageEditor.bundle; sourceTree = "<group>"; };
+		5CB527E00FC569BB7455BF8D /* CLCircleView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLCircleView.m; path = CLImageEditor/ImageTools/ToolSettings/CLCircleView.m; sourceTree = "<group>"; };
+		5D98E48B50B406C12F1A7A33 /* CLBloomEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLBloomEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLBloomEffect.m; sourceTree = "<group>"; };
+		5EBD8C6B84282235FBB8FC0E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		62EB12643497240691204843 /* CLImageToolSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLImageToolSettings.h; path = CLImageEditor/ImageTools/ToolSettings/CLImageToolSettings.h; sourceTree = "<group>"; };
+		66256F6EBE3650BE93776D4E /* Regexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Regexer.h; path = Regexer/Source/Regexer.h; sourceTree = "<group>"; };
+		6643ECCA8D9F9FCF5A64C658 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		6C46D139A2585168FB3AFC03 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		6CA75A9B8B882FE5BD291D81 /* CLPickerDrum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLPickerDrum.h; path = OptionalImageTools/CLTextTool/CLPickerDrum.h; sourceTree = "<group>"; };
+		70E6AC80F0E42193D72161D4 /* NSArray+Regexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Regexer.m"; path = "Regexer/Source/NSArray+Regexer.m"; sourceTree = "<group>"; };
+		73AB3930EE7BF06318EDC157 /* CLTextLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLTextLabel.m; path = OptionalImageTools/CLTextTool/CLTextLabel.m; sourceTree = "<group>"; };
+		778A80C1A08992D754BE0B0F /* CLClippingTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLClippingTool.m; path = CLImageEditor/ImageTools/CLClippingTool/CLClippingTool.m; sourceTree = "<group>"; };
+		7C0E4E0312292E8E3A86D865 /* CLEffectTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLEffectTool.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffectTool.h; sourceTree = "<group>"; };
+		7DF8D42753D6FDBA7A08FF5F /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
+		801146E9C1C878F8B653F6D2 /* NSArray+Regexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Regexer.h"; path = "Regexer/Source/NSArray+Regexer.h"; sourceTree = "<group>"; };
+		807D4FBC7554E5D807B482D8 /* Pods-PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PulsingHalo-dummy.m"; sourceTree = "<group>"; };
+		82AEF97691637AA54EF05B61 /* CLAdjustmentTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLAdjustmentTool.h; path = CLImageEditor/ImageTools/CLAdjustmentTool/CLAdjustmentTool.h; sourceTree = "<group>"; };
+		8465BDBCCD2B71FF499A7C81 /* CLHighlightShadowEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLHighlightShadowEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLHighlightShadowEffect.h; sourceTree = "<group>"; };
+		84B1BF362C72D03F8E4438F8 /* CLImageEditorTheme+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLImageEditorTheme+Private.h"; path = "CLImageEditor/ImageTools/ToolSettings/CLImageEditorTheme+Private.h"; sourceTree = "<group>"; };
+		8749C67F1E03478DEF665643 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		8767F1EBFA1221FCB94F7F6F /* CLPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLPickerView.m; path = OptionalImageTools/CLTextTool/CLPickerView.m; sourceTree = "<group>"; };
+		882BE527F1F07F35A0A570DB /* Pods-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDWebImage.xcconfig"; sourceTree = "<group>"; };
+		8A31A5A5A91915774DB81A3E /* UIDevice+SystemVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+SystemVersion.h"; path = "CLImageEditor/Utils/UIDevice+SystemVersion.h"; sourceTree = "<group>"; };
+		8B4D85EC630598774A255498 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		8C0794E3154ECC4F36EC595A /* CLFontPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLFontPickerView.h; path = OptionalImageTools/CLTextTool/CLFontPickerView.h; sourceTree = "<group>"; };
+		8D04DA1E3E2ABAC5DA97CF20 /* CLToolbarMenuItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLToolbarMenuItem.m; path = CLImageEditor/ImageTools/ToolSettings/CLToolbarMenuItem.m; sourceTree = "<group>"; };
+		929B196CFECA28E14ABF21C6 /* CLCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLCircleView.h; path = CLImageEditor/ImageTools/ToolSettings/CLCircleView.h; sourceTree = "<group>"; };
+		939ECBD0DE0833B5DB5500B3 /* UIImage+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utility.m"; path = "CLImageEditor/Utils/UIImage+Utility.m"; sourceTree = "<group>"; };
+		954A65E5C8821EBB73BD62ED /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		97C5A030D96A4D4D78DDC3AF /* CLDrawTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLDrawTool.m; path = CLImageEditor/ImageTools/CLDrawTool/CLDrawTool.m; sourceTree = "<group>"; };
+		9844223BE368F580D6CDF929 /* CLToolbarMenuItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLToolbarMenuItem.h; path = CLImageEditor/ImageTools/ToolSettings/CLToolbarMenuItem.h; sourceTree = "<group>"; };
+		9845DA5904F7A54B50672B58 /* RXCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RXCapture.m; path = Regexer/Source/RXCapture.m; sourceTree = "<group>"; };
+		98859A71D0517767E687CDD1 /* CLAdjustmentTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLAdjustmentTool.m; path = CLImageEditor/ImageTools/CLAdjustmentTool/CLAdjustmentTool.m; sourceTree = "<group>"; };
+		98F49EBE5AAB371594A7E018 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		9AF7445EB0B52E58EEB91120 /* CLImageEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLImageEditor.h; path = CLImageEditor/CLImageEditor.h; sourceTree = "<group>"; };
+		9B7E7AF70DC7B7FA663DBA1C /* CLPixellateEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLPixellateEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLPixellateEffect.m; sourceTree = "<group>"; };
+		9BA93086D98CA4655D1B4681 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		9D0D5AF700FFD5BFE75D13DB /* SPGripViewBorderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGripViewBorderView.h; path = ZDStickerView/SPGripViewBorderView.h; sourceTree = "<group>"; };
+		9E2D6141CD5B7BC8835FC973 /* CLHueEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLHueEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLHueEffect.h; sourceTree = "<group>"; };
+		9ED1DC727CE19A7792A686B6 /* CLEffectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLEffectBase.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffectBase.m; sourceTree = "<group>"; };
+		9FEB1EDEE2C7C8E1E0EAB2D4 /* NSString+Regexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Regexer.h"; path = "Regexer/Source/NSString+Regexer.h"; sourceTree = "<group>"; };
+		9FFC8B82C188AFE26A5D40DE /* CLPosterizeEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLPosterizeEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLPosterizeEffect.m; sourceTree = "<group>"; };
+		A093086773686AE6163C6693 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		A4B5AE7E46CFF957A340C29B /* CLSplashTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLSplashTool.m; path = OptionalImageTools/CLSplashTool/CLSplashTool.m; sourceTree = "<group>"; };
+		A6D69F7D7F30D7F77A67BE89 /* CLTextTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLTextTool.m; path = OptionalImageTools/CLTextTool/CLTextTool.m; sourceTree = "<group>"; };
+		A7135929875D49D9F6AF7CEE /* Pods-CLImageEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CLImageEditor-dummy.m"; sourceTree = "<group>"; };
+		A7DE5BD73AD75DC7F3F62A32 /* CLBlurTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLBlurTool.m; path = CLImageEditor/ImageTools/CLBlurTool/CLBlurTool.m; sourceTree = "<group>"; };
+		A88449ECF9C9721BE81E67FE /* CLSplineInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLSplineInterpolator.m; path = CLImageEditor/Utils/CLSplineInterpolator.m; sourceTree = "<group>"; };
+		ABF3D9266A33D7C17A00E4FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		ABFC3D2A7870B283D5594DD7 /* libPods-PulsingHalo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PulsingHalo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3FA698DC315DAB7C947B42 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		AE4B149B588375B9DC260260 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		AE6EB06046FBD72EA55008F9 /* CLHueEffect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLHueEffect.m; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLHueEffect.m; sourceTree = "<group>"; };
+		B0A05E52B085E83DC3A54F0E /* CLBlurTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLBlurTool.h; path = CLImageEditor/ImageTools/CLBlurTool/CLBlurTool.h; sourceTree = "<group>"; };
+		B162F539AC1E09918D56D604 /* CLStickerTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLStickerTool.h; path = OptionalImageTools/CLStickerTool/CLStickerTool.h; sourceTree = "<group>"; };
+		B575C2764AACCBEA6DFE8DA1 /* RXRegexCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RXRegexCache.h; path = Regexer/Source/RXRegexCache.h; sourceTree = "<group>"; };
+		B77853C3B1E0C1B714903387 /* Pods-ZDStickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZDStickerView-prefix.pch"; sourceTree = "<group>"; };
+		B88B10EECE00E6F4C069091C /* CLFilterBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLFilterBase.m; path = CLImageEditor/ImageTools/CLFilterTool/CLFilterBase.m; sourceTree = "<group>"; };
+		B94859486BEB7C7A2948C01E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		B96DF017DE45D7D68F5CA736 /* RXMatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RXMatch.h; path = Regexer/Source/RXMatch.h; sourceTree = "<group>"; };
+		B98376A925E87D7D24E4BCE0 /* Pods-PulsingHalo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo-Private.xcconfig"; sourceTree = "<group>"; };
+		B9F0F8A63B4B02CA501E60FE /* CLImageToolBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLImageToolBase.m; path = CLImageEditor/ImageTools/CLImageToolBase.m; sourceTree = "<group>"; };
+		BB95CCA37A32EDCE81DE9110 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		BC4516DBC448FC228FCFF3D8 /* CLToneCurveTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLToneCurveTool.m; path = CLImageEditor/ImageTools/CLToneCurveTool/CLToneCurveTool.m; sourceTree = "<group>"; };
+		BD330B8A924149080C0D6B56 /* MultiplePulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultiplePulsingHaloLayer.m; path = PulsingHalo/MultiplePulsingHaloLayer.m; sourceTree = "<group>"; };
+		BE3D32D1A8E9664BCF25F496 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEDACDFDB7995BA1CF100129 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		BF4922FE02F2027B1D37521A /* CLTextTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLTextTool.h; path = OptionalImageTools/CLTextTool/CLTextTool.h; sourceTree = "<group>"; };
+		C1B7E75149A9D8D2C81817FE /* UIDevice+SystemVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+SystemVersion.m"; path = "CLImageEditor/Utils/UIDevice+SystemVersion.m"; sourceTree = "<group>"; };
+		C35381BE598EAA00E989A829 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		C5ACD0C5C5AB819A6D64EFDB /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		C72E9008847007E6153F123C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		C75186418C1D368E651F6195 /* Pods-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		C8B08076ACCEA314FB77723A /* libPods-Regexer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Regexer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E0AB3E35D57EE52E163373 /* CLTextLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLTextLabel.h; path = OptionalImageTools/CLTextTool/CLTextLabel.h; sourceTree = "<group>"; };
+		CA6113B414ED936A620456A2 /* CLSpotEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSpotEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLSpotEffect.h; sourceTree = "<group>"; };
+		CA7E038D780787ED6D7E1F64 /* CLResizeTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLResizeTool.h; path = OptionalImageTools/CLResizeTool/CLResizeTool.h; sourceTree = "<group>"; };
+		CB25D8672C2F12E92544E577 /* CLFilterTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLFilterTool.m; path = CLImageEditor/ImageTools/CLFilterTool/CLFilterTool.m; sourceTree = "<group>"; };
+		CBC3BD8CF0B645884536D810 /* Pods-SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		CD5C4AE3BDFA33645034D0A2 /* CLPosterizeEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLPosterizeEffect.h; path = CLImageEditor/ImageTools/CLEffectTool/CLEffect/CLPosterizeEffect.h; sourceTree = "<group>"; };
+		D0B7F071DEB605807DAE60CA /* CLColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLColorPickerView.h; path = CLImageEditor/ImageTools/ToolSettings/CLColorPickerView.h; sourceTree = "<group>"; };
+		D17A877ADEDF8E9E71D1490D /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		D1F4E296D78C4EC4000DBA57 /* SPGripViewBorderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGripViewBorderView.m; path = ZDStickerView/SPGripViewBorderView.m; sourceTree = "<group>"; };
+		D20DF5A4868DABB8AEE95368 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D418230FABB8B0325F1C71DD /* CLClippingTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLClippingTool.h; path = CLImageEditor/ImageTools/CLClippingTool/CLClippingTool.h; sourceTree = "<group>"; };
+		D520069BB07065BABFACF53B /* Pods-ZDStickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZDStickerView-dummy.m"; sourceTree = "<group>"; };
+		D5BC2C1FA40603CEB218890A /* UIImage+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Utility.h"; path = "CLImageEditor/Utils/UIImage+Utility.h"; sourceTree = "<group>"; };
+		D5E9F07111202325D42FBC22 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		D5FA652F40BCAA14E2DDB629 /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Frame.h"; path = "CLImageEditor/Utils/UIView+Frame.h"; sourceTree = "<group>"; };
+		D6E7100686516FAD03B29DF0 /* CLImageEditorTheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLImageEditorTheme.m; path = CLImageEditor/CLImageEditorTheme.m; sourceTree = "<group>"; };
+		D737575CD2DED0D02AC8BBAD /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		DB2F680312EF5FE43F6F8650 /* RXMatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RXMatch.m; path = Regexer/Source/RXMatch.m; sourceTree = "<group>"; };
+		DBB27DB7D38537ADF782E229 /* CLClassList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLClassList.m; path = CLImageEditor/Utils/CLClassList.m; sourceTree = "<group>"; };
+		DF67D48A22428D7DBCF74209 /* CLSplashTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSplashTool.h; path = OptionalImageTools/CLSplashTool/CLSplashTool.h; sourceTree = "<group>"; };
+		E029332F72ED16CBF8DE34F2 /* ZDStickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZDStickerView.m; path = ZDStickerView/ZDStickerView.m; sourceTree = "<group>"; };
+		E1463B014D694B646BCFC30C /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		E5153D31505BA9A1493FEDF1 /* Pods-PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
+		E53B53E75224B1E95AA5C4AD /* CLPickerDrum.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLPickerDrum.m; path = OptionalImageTools/CLTextTool/CLPickerDrum.m; sourceTree = "<group>"; };
+		E787BAE3B6115281D41E420E /* Pods-CLImageEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CLImageEditor-prefix.pch"; sourceTree = "<group>"; };
+		EA5255C9F02FBE64D6D754B9 /* CLClassList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLClassList.h; path = CLImageEditor/Utils/CLClassList.h; sourceTree = "<group>"; };
+		EA76D6C18250699D038B4EA4 /* CLPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLPickerView.h; path = OptionalImageTools/CLTextTool/CLPickerView.h; sourceTree = "<group>"; };
+		EB4487F8EC22BE22003E5169 /* Pods-ZDStickerView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZDStickerView-Private.xcconfig"; sourceTree = "<group>"; };
+		EB77A4099516838436CFDA90 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		EFB7B4192AF80C1FB80A23CD /* CLRotateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLRotateTool.m; path = CLImageEditor/ImageTools/CLRotateTool/CLRotateTool.m; sourceTree = "<group>"; };
+		F0C18C9F19EEFA767892A12C /* Pods-PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulsingHalo.xcconfig"; sourceTree = "<group>"; };
+		F4A9232AC28FC792558787B8 /* Pods-ZDStickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZDStickerView.xcconfig"; sourceTree = "<group>"; };
+		F529BAC1A52F25B6CF4BD87D /* Pods-Regexer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Regexer.xcconfig"; sourceTree = "<group>"; };
+		F71F1BA4074BE46F3E1C9696 /* CLFilterTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLFilterTool.h; path = CLImageEditor/ImageTools/CLFilterTool/CLFilterTool.h; sourceTree = "<group>"; };
+		FBB9FAD6F01D243E27F22D69 /* CLImageToolProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLImageToolProtocol.h; path = CLImageEditor/ImageTools/ToolSettings/CLImageToolProtocol.h; sourceTree = "<group>"; };
+		FCE2747B8BE84DC96919BE71 /* CLResizeTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLResizeTool.m; path = OptionalImageTools/CLResizeTool/CLResizeTool.m; sourceTree = "<group>"; };
+		FD29E27D1EB8B534E9D16532 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06D88E208C805CEF6D01E517 /* Frameworks */ = {
+		2CED9A5A321D2C4DF705DCD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6FFC9EF3D44CBFA388CBB17 /* Foundation.framework in Frameworks */,
-				9DB5A4CE5F49DED9852E2B5D /* QuartzCore.framework in Frameworks */,
+				8F6EB4C85F6A880745D44422 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3EBA8B01391CE527CCC4ED47 /* Frameworks */ = {
+		4A9273DD2FC978723A71DD23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079E2985EB87251277A3FDDD /* Foundation.framework in Frameworks */,
-				F1E9904C121F5D73D4193DD8 /* QuartzCore.framework in Frameworks */,
+				95A231A3424C8C1BB0015782 /* Foundation.framework in Frameworks */,
+				34496D93A9505FFDF475626B /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D21CCDF6B9C6CE2E60DE54EB /* Frameworks */ = {
+		5543579125A412F0D015068F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72B3E07E8A8B66597E39114 /* Foundation.framework in Frameworks */,
+				51CDF3DBF9481C0E87F20055 /* Foundation.framework in Frameworks */,
+				E235414A9B772B22FFDB3B95 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58A0EFD160474E856FEF0A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A81DB645AEB2E95501EA3D /* Foundation.framework in Frameworks */,
+				0156A67464115E7892EF27C9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EBF60F6BF2F3AD03E92CB50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E31D1DCCFF533F3228D86D /* Accelerate.framework in Frameworks */,
+				E65D5A74571E751B1B644125 /* CoreGraphics.framework in Frameworks */,
+				E7067260A202626B6401F3F2 /* CoreImage.framework in Frameworks */,
+				EB1B8A413F1A7DE7CF42A795 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A64BDD76BA73E19FC575FE51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E65FBBF0CE0CFE42C8D904E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47BE5BA56249C577173A74F1 /* Pods */ = {
+		0017294FDAFFB0C216EE936D /* ZDStickerView */ = {
 			isa = PBXGroup;
 			children = (
-				4AC70B0D8EEBF7E3736C1AC1 /* PulsingHalo */,
-				F900B237A58D2BA1AB9E2E2F /* ZDStickerView */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4AC70B0D8EEBF7E3736C1AC1 /* PulsingHalo */ = {
-			isa = PBXGroup;
-			children = (
-				A275E94471C22CCF5F30AE24 /* MultiplePulsingHaloLayer.h */,
-				187D5FC17351D9ECBD1C4B55 /* MultiplePulsingHaloLayer.m */,
-				95AE90A5DC02335A56017462 /* PulsingHaloLayer.h */,
-				21818F4EFA7E2B695FA5AFF8 /* PulsingHaloLayer.m */,
-				FF6C1AA08C605F35C85D8C7B /* Support Files */,
-			);
-			path = PulsingHalo;
-			sourceTree = "<group>";
-		};
-		6C7D54CAAA339B3828BDA1B8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3CD0F3977D29FDDEEF671015 /* ZDStickerView.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		738954C3411FC6E3B5893D20 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C10489A67F69BBF295CC5617 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		873E5971830B1BD2356D6078 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				14DC12114B07D569DB9F9F66 /* Pods-acknowledgements.markdown */,
-				03F736F5D5C1F3A08AD52DD9 /* Pods-acknowledgements.plist */,
-				F67281618F0BD6A7AB7C10A0 /* Pods-dummy.m */,
-				465522882666AC3F1CFE5984 /* Pods-environment.h */,
-				3F726D9AAA61005E4FC8863E /* Pods-resources.sh */,
-				74FF2E794A86690EAB5084AC /* Pods.debug.xcconfig */,
-				E30451747B7900F4454EFA51 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		B406DD31DE8FE38F093A18BE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FBA049CCD2B677B3E490D088 /* libPods.a */,
-				A93821689BAEC9F5562F9A90 /* libPods-PulsingHalo.a */,
-				F7132ACA17426EE4257112C0 /* libPods-ZDStickerView.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C10489A67F69BBF295CC5617 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				62B2ADCF7F6CDF5F096D5417 /* Foundation.framework */,
-				DCCF3F7A03CC420E96B0CEB3 /* QuartzCore.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E5A65C18B9957FB0C4388990 = {
-			isa = PBXGroup;
-			children = (
-				AE16918F38067F87D46D95A1 /* Podfile */,
-				738954C3411FC6E3B5893D20 /* Frameworks */,
-				47BE5BA56249C577173A74F1 /* Pods */,
-				B406DD31DE8FE38F093A18BE /* Products */,
-				F99AEBC439C2F83D1E8B3BC5 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		F652479C6B168EC850E4BBBF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9835BAD24851627BD026111 /* Pods-ZDStickerView.xcconfig */,
-				21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */,
-				65B59888767D52AAC9D403E9 /* Pods-ZDStickerView-dummy.m */,
-				FC5A1ACEAEEFF0190F0F4502 /* Pods-ZDStickerView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-ZDStickerView";
-			sourceTree = "<group>";
-		};
-		F900B237A58D2BA1AB9E2E2F /* ZDStickerView */ = {
-			isa = PBXGroup;
-			children = (
-				6A05B4E25A05769E46552F4D /* SPGripViewBorderView.h */,
-				20C46C0EF959C1295F997254 /* SPGripViewBorderView.m */,
-				7F750B6DA4F3D27CD26930DC /* ZDStickerView.h */,
-				DB5878DEF30570E7389DDCF7 /* ZDStickerView.m */,
-				6C7D54CAAA339B3828BDA1B8 /* Resources */,
-				F652479C6B168EC850E4BBBF /* Support Files */,
+				9D0D5AF700FFD5BFE75D13DB /* SPGripViewBorderView.h */,
+				D1F4E296D78C4EC4000DBA57 /* SPGripViewBorderView.m */,
+				19F7E73CF87AD24A600FA8DD /* ZDStickerView.h */,
+				E029332F72ED16CBF8DE34F2 /* ZDStickerView.m */,
+				F4B4B0DF82EA46D3405DC617 /* Resources */,
+				E107FFFC65F0242E50D5D86B /* Support Files */,
 			);
 			path = ZDStickerView;
 			sourceTree = "<group>";
 		};
-		F99AEBC439C2F83D1E8B3BC5 /* Targets Support Files */ = {
+		0EC55A5D808A254B2C465024 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				873E5971830B1BD2356D6078 /* Pods */,
+				4DB8BBB9C4E30A19CA85088C /* iOS */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FF6C1AA08C605F35C85D8C7B /* Support Files */ = {
+		0FDEDDDE9BE88AF14093DF46 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				5C81D26BCA2ED21399182641 /* Pods-PulsingHalo.xcconfig */,
-				A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */,
-				B0A6F6152FDB2C3EE8C44790 /* Pods-PulsingHalo-dummy.m */,
-				B855396B3F2C12B0E4546248 /* Pods-PulsingHalo-prefix.pch */,
+				82AEF97691637AA54EF05B61 /* CLAdjustmentTool.h */,
+				98859A71D0517767E687CDD1 /* CLAdjustmentTool.m */,
+				0229EAAF39FB969AB399EF07 /* CLBloomEffect.h */,
+				5D98E48B50B406C12F1A7A33 /* CLBloomEffect.m */,
+				B0A05E52B085E83DC3A54F0E /* CLBlurTool.h */,
+				A7DE5BD73AD75DC7F3F62A32 /* CLBlurTool.m */,
+				929B196CFECA28E14ABF21C6 /* CLCircleView.h */,
+				5CB527E00FC569BB7455BF8D /* CLCircleView.m */,
+				EA5255C9F02FBE64D6D754B9 /* CLClassList.h */,
+				DBB27DB7D38537ADF782E229 /* CLClassList.m */,
+				D418230FABB8B0325F1C71DD /* CLClippingTool.h */,
+				778A80C1A08992D754BE0B0F /* CLClippingTool.m */,
+				D0B7F071DEB605807DAE60CA /* CLColorPickerView.h */,
+				447ED836A7B65AA02926D084 /* CLColorPickerView.m */,
+				03A768B0DACB20FC8239784F /* CLDrawTool.h */,
+				97C5A030D96A4D4D78DDC3AF /* CLDrawTool.m */,
+				4BE96E2282AA5E1066563358 /* CLEffectBase.h */,
+				9ED1DC727CE19A7792A686B6 /* CLEffectBase.m */,
+				7C0E4E0312292E8E3A86D865 /* CLEffectTool.h */,
+				12D71DA7A23FC87BFD669FB3 /* CLEffectTool.m */,
+				5B41AB9E1811311A835B6C24 /* CLFilterBase.h */,
+				B88B10EECE00E6F4C069091C /* CLFilterBase.m */,
+				F71F1BA4074BE46F3E1C9696 /* CLFilterTool.h */,
+				CB25D8672C2F12E92544E577 /* CLFilterTool.m */,
+				517EAF3347BACCCCBCEE21B4 /* CLGloomEffect.h */,
+				09A04A64E9B301ECFF87B13C /* CLGloomEffect.m */,
+				8465BDBCCD2B71FF499A7C81 /* CLHighlightShadowEffect.h */,
+				16544BC0D7F4FBACC3D8BBA7 /* CLHighlightShadowEffect.m */,
+				9E2D6141CD5B7BC8835FC973 /* CLHueEffect.h */,
+				AE6EB06046FBD72EA55008F9 /* CLHueEffect.m */,
+				9AF7445EB0B52E58EEB91120 /* CLImageEditor.h */,
+				262F54B723C6C6A461944A4F /* CLImageEditor.m */,
+				0FCC9B1AC4A43732863831EE /* CLImageEditorTheme.h */,
+				D6E7100686516FAD03B29DF0 /* CLImageEditorTheme.m */,
+				84B1BF362C72D03F8E4438F8 /* CLImageEditorTheme+Private.h */,
+				0B2B72E43189CEB837B83F69 /* CLImageEditorTheme+Private.m */,
+				1D65385ACFD7CB6592F3F2FD /* CLImageToolBase.h */,
+				B9F0F8A63B4B02CA501E60FE /* CLImageToolBase.m */,
+				0FF381D69A84A5B9457E85E9 /* CLImageToolInfo.h */,
+				1F03C69605D614DF8B65758C /* CLImageToolInfo.m */,
+				4679A4FB79CEEAE68FEF5E41 /* CLImageToolInfo+Private.h */,
+				58BC58C873F7C0EA4AFEC519 /* CLImageToolInfo+Private.m */,
+				FBB9FAD6F01D243E27F22D69 /* CLImageToolProtocol.h */,
+				62EB12643497240691204843 /* CLImageToolSettings.h */,
+				499B27A340A1BE4028C25A0B /* CLPixellateEffect.h */,
+				9B7E7AF70DC7B7FA663DBA1C /* CLPixellateEffect.m */,
+				CD5C4AE3BDFA33645034D0A2 /* CLPosterizeEffect.h */,
+				9FFC8B82C188AFE26A5D40DE /* CLPosterizeEffect.m */,
+				5308304234CDB80E5868D555 /* CLRotateTool.h */,
+				EFB7B4192AF80C1FB80A23CD /* CLRotateTool.m */,
+				353FAF0B7EF4E18D28400336 /* CLSplineInterpolator.h */,
+				A88449ECF9C9721BE81E67FE /* CLSplineInterpolator.m */,
+				CA6113B414ED936A620456A2 /* CLSpotEffect.h */,
+				14D85DF0C6C20B981A2C9BC6 /* CLSpotEffect.m */,
+				486C0384953C03C9967B9595 /* CLToneCurveTool.h */,
+				BC4516DBC448FC228FCFF3D8 /* CLToneCurveTool.m */,
+				9844223BE368F580D6CDF929 /* CLToolbarMenuItem.h */,
+				8D04DA1E3E2ABAC5DA97CF20 /* CLToolbarMenuItem.m */,
+				8A31A5A5A91915774DB81A3E /* UIDevice+SystemVersion.h */,
+				C1B7E75149A9D8D2C81817FE /* UIDevice+SystemVersion.m */,
+				D5BC2C1FA40603CEB218890A /* UIImage+Utility.h */,
+				939ECBD0DE0833B5DB5500B3 /* UIImage+Utility.m */,
+				3CA30D6808CB998F941EC08B /* UIView+CLImageToolInfo.h */,
+				20371047200220F3054F76E0 /* UIView+CLImageToolInfo.m */,
+				D5FA652F40BCAA14E2DDB629 /* UIView+Frame.h */,
+				49A137053DEF6C4F751B1DE6 /* UIView+Frame.m */,
+				4BABD8E759381A2D73D56EFF /* _CLImageEditorViewController.h */,
+				4AC6C2CC38DD7F258170285D /* _CLImageEditorViewController.m */,
+				A80467C8B59610D7227B0B0D /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		13EFCFFD07F50469C740DDE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC48EB3DC64BCEBFCC18696D /* CLImageEditor */,
+				CD29CFAF9D1E82415A62ACA1 /* PulsingHalo */,
+				1D4AF43E2A534A6AED1A427B /* Regexer */,
+				E6B9C9314E2516C3A4ABCAA1 /* SDWebImage */,
+				0017294FDAFFB0C216EE936D /* ZDStickerView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		186F6C67E362D33DF25F9B43 /* TextTool */ = {
+			isa = PBXGroup;
+			children = (
+				8C0794E3154ECC4F36EC595A /* CLFontPickerView.h */,
+				43F6A0DA3941D49FBB200E9C /* CLFontPickerView.m */,
+				6CA75A9B8B882FE5BD291D81 /* CLPickerDrum.h */,
+				E53B53E75224B1E95AA5C4AD /* CLPickerDrum.m */,
+				EA76D6C18250699D038B4EA4 /* CLPickerView.h */,
+				8767F1EBFA1221FCB94F7F6F /* CLPickerView.m */,
+				C9E0AB3E35D57EE52E163373 /* CLTextLabel.h */,
+				73AB3930EE7BF06318EDC157 /* CLTextLabel.m */,
+				30D3D61C6613B0FE5C413CE6 /* CLTextSettingView.h */,
+				1D8C7538689F29AB50A53C46 /* CLTextSettingView.m */,
+				BF4922FE02F2027B1D37521A /* CLTextTool.h */,
+				A6D69F7D7F30D7F77A67BE89 /* CLTextTool.m */,
+			);
+			name = TextTool;
+			sourceTree = "<group>";
+		};
+		19F5364C136A7FE85EEC69CA /* StickerTool */ = {
+			isa = PBXGroup;
+			children = (
+				B162F539AC1E09918D56D604 /* CLStickerTool.h */,
+				10FAD5A303DC6EBAD9A376C0 /* CLStickerTool.m */,
+			);
+			name = StickerTool;
+			sourceTree = "<group>";
+		};
+		1BE121ED0696E7B0EDC6B06E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02541AC910EFE7438B48DE49 /* Pods-CLImageEditor.xcconfig */,
+				31143CFF04993594009E5E1D /* Pods-CLImageEditor-Private.xcconfig */,
+				A7135929875D49D9F6AF7CEE /* Pods-CLImageEditor-dummy.m */,
+				E787BAE3B6115281D41E420E /* Pods-CLImageEditor-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CLImageEditor";
+			sourceTree = "<group>";
+		};
+		1D4AF43E2A534A6AED1A427B /* Regexer */ = {
+			isa = PBXGroup;
+			children = (
+				801146E9C1C878F8B653F6D2 /* NSArray+Regexer.h */,
+				70E6AC80F0E42193D72161D4 /* NSArray+Regexer.m */,
+				9FEB1EDEE2C7C8E1E0EAB2D4 /* NSString+Regexer.h */,
+				151A7EE1957F41AB94F27754 /* NSString+Regexer.m */,
+				4ADB67311ECDF305B107A3B8 /* RXCapture.h */,
+				9845DA5904F7A54B50672B58 /* RXCapture.m */,
+				B96DF017DE45D7D68F5CA736 /* RXMatch.h */,
+				DB2F680312EF5FE43F6F8650 /* RXMatch.m */,
+				B575C2764AACCBEA6DFE8DA1 /* RXRegexCache.h */,
+				2087D27CB234D040426F078C /* RXRegexCache.m */,
+				66256F6EBE3650BE93776D4E /* Regexer.h */,
+				B6625EC8DF7C30C2F4D36C4C /* Support Files */,
+			);
+			path = Regexer;
+			sourceTree = "<group>";
+		};
+		29E1DC8A9DFC06FE579C7B8D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				954A65E5C8821EBB73BD62ED /* NSData+ImageContentType.h */,
+				1BC41CA94907E24E32832323 /* NSData+ImageContentType.m */,
+				C35381BE598EAA00E989A829 /* SDImageCache.h */,
+				98F49EBE5AAB371594A7E018 /* SDImageCache.m */,
+				D17A877ADEDF8E9E71D1490D /* SDWebImageCompat.h */,
+				59898D58934F8318F730FDCE /* SDWebImageCompat.m */,
+				362F72B6589CED0B27BE1E14 /* SDWebImageDecoder.h */,
+				8B4D85EC630598774A255498 /* SDWebImageDecoder.m */,
+				06007D02DECDE7FE730F7618 /* SDWebImageDownloader.h */,
+				EB77A4099516838436CFDA90 /* SDWebImageDownloader.m */,
+				228B90136D4C97C9E0EF3EAC /* SDWebImageDownloaderOperation.h */,
+				1FD049B7954A46008207AAC2 /* SDWebImageDownloaderOperation.m */,
+				311CF48DEE2C5B199BD1272A /* SDWebImageManager.h */,
+				3ECE4D1FF341ADEF56BD9518 /* SDWebImageManager.m */,
+				238B9804D28541C3926831E0 /* SDWebImageOperation.h */,
+				C5ACD0C5C5AB819A6D64EFDB /* SDWebImagePrefetcher.h */,
+				E1463B014D694B646BCFC30C /* SDWebImagePrefetcher.m */,
+				0338845F520E31AE1C947A03 /* UIButton+WebCache.h */,
+				4BBB8F3EDC8C16CB92856FA4 /* UIButton+WebCache.m */,
+				10CB68C19A4BB072E37CDD64 /* UIImage+GIF.h */,
+				AE4B149B588375B9DC260260 /* UIImage+GIF.m */,
+				287B3C15831A5CF2BE35505D /* UIImage+MultiFormat.h */,
+				A093086773686AE6163C6693 /* UIImage+MultiFormat.m */,
+				BB95CCA37A32EDCE81DE9110 /* UIImageView+HighlightedWebCache.h */,
+				6C46D139A2585168FB3AFC03 /* UIImageView+HighlightedWebCache.m */,
+				D5E9F07111202325D42FBC22 /* UIImageView+WebCache.h */,
+				1AF80CFEFA4AFB5694374834 /* UIImageView+WebCache.m */,
+				B94859486BEB7C7A2948C01E /* UIView+WebCacheOperation.h */,
+				D737575CD2DED0D02AC8BBAD /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3011690619679C080121CB6D = {
+			isa = PBXGroup;
+			children = (
+				BE3D32D1A8E9664BCF25F496 /* Podfile */,
+				0EC55A5D808A254B2C465024 /* Frameworks */,
+				13EFCFFD07F50469C740DDE9 /* Pods */,
+				D5C8E09E15AF92C994E41BE9 /* Products */,
+				949D9A6166CD23A01777B370 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		39DCD8080408F935A6EE4ABE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0C18C9F19EEFA767892A12C /* Pods-PulsingHalo.xcconfig */,
+				B98376A925E87D7D24E4BCE0 /* Pods-PulsingHalo-Private.xcconfig */,
+				807D4FBC7554E5D807B482D8 /* Pods-PulsingHalo-dummy.m */,
+				E5153D31505BA9A1493FEDF1 /* Pods-PulsingHalo-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-PulsingHalo";
 			sourceTree = "<group>";
 		};
+		4DB8BBB9C4E30A19CA85088C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9BA93086D98CA4655D1B4681 /* Accelerate.framework */,
+				274BBF2425F5D93C7927565B /* CoreGraphics.framework */,
+				3B7BFFD447FEC922E660F692 /* CoreImage.framework */,
+				FD29E27D1EB8B534E9D16532 /* Foundation.framework */,
+				C72E9008847007E6153F123C /* ImageIO.framework */,
+				3FEE6AE0AFA3C3B7EE21502D /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6010A3ADF864D865544D8336 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD8C6B84282235FBB8FC0E /* Pods-acknowledgements.markdown */,
+				8749C67F1E03478DEF665643 /* Pods-acknowledgements.plist */,
+				BEDACDFDB7995BA1CF100129 /* Pods-dummy.m */,
+				AC3FA698DC315DAB7C947B42 /* Pods-environment.h */,
+				23C085FA81F2EB07FBB3261B /* Pods-resources.sh */,
+				6643ECCA8D9F9FCF5A64C658 /* Pods.debug.xcconfig */,
+				ABF3D9266A33D7C17A00E4FB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		64992507041454392C58F483 /* ResizeTool */ = {
+			isa = PBXGroup;
+			children = (
+				CA7E038D780787ED6D7E1F64 /* CLResizeTool.h */,
+				FCE2747B8BE84DC96919BE71 /* CLResizeTool.m */,
+			);
+			name = ResizeTool;
+			sourceTree = "<group>";
+		};
+		949D9A6166CD23A01777B370 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6010A3ADF864D865544D8336 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A80467C8B59610D7227B0B0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BACB3A1121884D5F0FDEE7F /* CLImageEditor.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AAB43CDDCD413B0E464E2F5A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				882BE527F1F07F35A0A570DB /* Pods-SDWebImage.xcconfig */,
+				171A264EEBB9F413F4E9FB60 /* Pods-SDWebImage-Private.xcconfig */,
+				CBC3BD8CF0B645884536D810 /* Pods-SDWebImage-dummy.m */,
+				C75186418C1D368E651F6195 /* Pods-SDWebImage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SDWebImage";
+			sourceTree = "<group>";
+		};
+		B6625EC8DF7C30C2F4D36C4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F529BAC1A52F25B6CF4BD87D /* Pods-Regexer.xcconfig */,
+				0396F93FCBC09267AAC64BDF /* Pods-Regexer-Private.xcconfig */,
+				35A7B7D021099D0DE28A0A87 /* Pods-Regexer-dummy.m */,
+				52B0EDE9BFBB1C46E1E5DC71 /* Pods-Regexer-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Regexer";
+			sourceTree = "<group>";
+		};
+		CC48EB3DC64BCEBFCC18696D /* CLImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				0FDEDDDE9BE88AF14093DF46 /* Core */,
+				64992507041454392C58F483 /* ResizeTool */,
+				F7B7278D1DD95B1BD31AB3AD /* SplashTool */,
+				19F5364C136A7FE85EEC69CA /* StickerTool */,
+				1BE121ED0696E7B0EDC6B06E /* Support Files */,
+				186F6C67E362D33DF25F9B43 /* TextTool */,
+			);
+			path = CLImageEditor;
+			sourceTree = "<group>";
+		};
+		CD29CFAF9D1E82415A62ACA1 /* PulsingHalo */ = {
+			isa = PBXGroup;
+			children = (
+				11D8B2352D778D9E6FC664CE /* MultiplePulsingHaloLayer.h */,
+				BD330B8A924149080C0D6B56 /* MultiplePulsingHaloLayer.m */,
+				1D5BF22D267A8FD33B056A28 /* PulsingHaloLayer.h */,
+				7DF8D42753D6FDBA7A08FF5F /* PulsingHaloLayer.m */,
+				39DCD8080408F935A6EE4ABE /* Support Files */,
+			);
+			path = PulsingHalo;
+			sourceTree = "<group>";
+		};
+		D5C8E09E15AF92C994E41BE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20DF5A4868DABB8AEE95368 /* libPods.a */,
+				30B4FA7B93A131D964781796 /* libPods-CLImageEditor.a */,
+				ABFC3D2A7870B283D5594DD7 /* libPods-PulsingHalo.a */,
+				C8B08076ACCEA314FB77723A /* libPods-Regexer.a */,
+				169A5F07833E2BDDFCD7BE14 /* libPods-SDWebImage.a */,
+				0DE5E88F63D1A5DB313918C5 /* libPods-ZDStickerView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E107FFFC65F0242E50D5D86B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4A9232AC28FC792558787B8 /* Pods-ZDStickerView.xcconfig */,
+				EB4487F8EC22BE22003E5169 /* Pods-ZDStickerView-Private.xcconfig */,
+				D520069BB07065BABFACF53B /* Pods-ZDStickerView-dummy.m */,
+				B77853C3B1E0C1B714903387 /* Pods-ZDStickerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ZDStickerView";
+			sourceTree = "<group>";
+		};
+		E6B9C9314E2516C3A4ABCAA1 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				29E1DC8A9DFC06FE579C7B8D /* Core */,
+				AAB43CDDCD413B0E464E2F5A /* Support Files */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		F4B4B0DF82EA46D3405DC617 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27B79F01CA9C9DEBA526AA12 /* ZDStickerView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F7B7278D1DD95B1BD31AB3AD /* SplashTool */ = {
+			isa = PBXGroup;
+			children = (
+				DF67D48A22428D7DBCF74209 /* CLSplashTool.h */,
+				A4B5AE7E46CFF957A340C29B /* CLSplashTool.m */,
+			);
+			name = SplashTool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8EC77E08861F691F835C7B45 /* Headers */ = {
+		5D718BACD77A8CF93705D62B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D4322B46A2677F395888B8 /* SPGripViewBorderView.h in Headers */,
-				A3D866353B82DE227F876EFF /* ZDStickerView.h in Headers */,
+				031F3A08FA55A04B3045EBB5 /* NSArray+Regexer.h in Headers */,
+				0C1BCCBC84F4631F907C905C /* NSString+Regexer.h in Headers */,
+				54502AAF971DFFF11A17D4FD /* RXCapture.h in Headers */,
+				AD5B71CEF5326168AF63CF82 /* RXMatch.h in Headers */,
+				934BCA6F8BD0C3353CA29C60 /* RXRegexCache.h in Headers */,
+				ED391C82821656A1914EC811 /* Regexer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A93EA9247B82C363AE065889 /* Headers */ = {
+		62C634488EC4A86FD550048D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB6E14762521E7466907640 /* MultiplePulsingHaloLayer.h in Headers */,
-				36D88033B6C5D89AF8CDE475 /* PulsingHaloLayer.h in Headers */,
+				5B5FA05310D234BC48612F5C /* CLAdjustmentTool.h in Headers */,
+				BE95FAE283E85E93260CE79D /* CLBloomEffect.h in Headers */,
+				EE69A80F452381AA544B935C /* CLBlurTool.h in Headers */,
+				C012A8B240D9A1489ACD4BAB /* CLCircleView.h in Headers */,
+				D2DB9389CE207E6BCE39E538 /* CLClassList.h in Headers */,
+				5BC70EB5A393DBEC73F58543 /* CLClippingTool.h in Headers */,
+				04DFD67B17B26AB84C6324C5 /* CLColorPickerView.h in Headers */,
+				8B210DE86F4C53C1DDED6AA2 /* CLDrawTool.h in Headers */,
+				DFC0350EFC2FE66129E7ECE4 /* CLEffectBase.h in Headers */,
+				1BD4FA8AA751BDCE72F09055 /* CLEffectTool.h in Headers */,
+				54640CC47E8F1BBA06D2A669 /* CLFilterBase.h in Headers */,
+				9D4F92C7C1389C6C1B4ED602 /* CLFilterTool.h in Headers */,
+				A9E3E910EF3F73A3877252FE /* CLFontPickerView.h in Headers */,
+				74077CC2AD1B792F49B976EF /* CLGloomEffect.h in Headers */,
+				2E729CD3F276030B6028B2AE /* CLHighlightShadowEffect.h in Headers */,
+				869FF63D034362C94824F8FC /* CLHueEffect.h in Headers */,
+				63C739613506C41EC5E03D84 /* CLImageEditor.h in Headers */,
+				ECB10940520B574111802A4F /* CLImageEditorTheme+Private.h in Headers */,
+				2E1BE8FD7C0B92C7521257B5 /* CLImageEditorTheme.h in Headers */,
+				1BA996D021BF80093186F2FA /* CLImageToolBase.h in Headers */,
+				1AA846482520647605E7E9DE /* CLImageToolInfo+Private.h in Headers */,
+				FD3AFAAABA78D9F07C8B3081 /* CLImageToolInfo.h in Headers */,
+				D8511BA62E0A936DD5C21A17 /* CLImageToolProtocol.h in Headers */,
+				528DC7D9217D05F11518315B /* CLImageToolSettings.h in Headers */,
+				24318C8B1FF5D7303B274D08 /* CLPickerDrum.h in Headers */,
+				AA8F4081890DB542E54376F2 /* CLPickerView.h in Headers */,
+				3B665B5780A2FDBD3F63609D /* CLPixellateEffect.h in Headers */,
+				2DC16D45B5B1BAD60E3E5D92 /* CLPosterizeEffect.h in Headers */,
+				AD636C810745696E82E79BDB /* CLResizeTool.h in Headers */,
+				7EB61DA0A6DF3365C87F0F96 /* CLRotateTool.h in Headers */,
+				EF4499D20CD1580D80C5D8C7 /* CLSplashTool.h in Headers */,
+				F7A03A379C1E91D00FC0F242 /* CLSplineInterpolator.h in Headers */,
+				034FD6F65632C393C8267CCD /* CLSpotEffect.h in Headers */,
+				B418CB9F57E90290531470A1 /* CLStickerTool.h in Headers */,
+				9D202A6E2D79FFE13905E30E /* CLTextLabel.h in Headers */,
+				4A58C85C6E616EF0FCC98272 /* CLTextSettingView.h in Headers */,
+				2C27E771FD7D9BF567238009 /* CLTextTool.h in Headers */,
+				CEB4D3EA6E31624BC2B7E9F5 /* CLToneCurveTool.h in Headers */,
+				25F67EE8C4D94BEA3E591E9D /* CLToolbarMenuItem.h in Headers */,
+				1A9F420A47B2724294B848C5 /* UIDevice+SystemVersion.h in Headers */,
+				550C6AD3860DA5A28C7D03C2 /* UIImage+Utility.h in Headers */,
+				0509E71F3F8B980B3C5C9A84 /* UIView+CLImageToolInfo.h in Headers */,
+				9ACD007BD9EAF793592F5000 /* UIView+Frame.h in Headers */,
+				E454DFAB7703CDA86AF20490 /* _CLImageEditorViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D350B22CB81A53A6013838F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D7A7F30259A8FB7CDFBB1F /* MultiplePulsingHaloLayer.h in Headers */,
+				72280F9F578B25808920551B /* PulsingHaloLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43ED098EAC6E5E4407B5B8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2472D00358A40F3BCDFF8F8 /* NSData+ImageContentType.h in Headers */,
+				95CB3EE0AE8FECAE4E741809 /* SDImageCache.h in Headers */,
+				A86DEAFA56DD8570E4E937F2 /* SDWebImageCompat.h in Headers */,
+				890CBD084950A922D4863DFD /* SDWebImageDecoder.h in Headers */,
+				7018F4ADD1369DE148597BF7 /* SDWebImageDownloader.h in Headers */,
+				ABDEB697129216DA1A563A78 /* SDWebImageDownloaderOperation.h in Headers */,
+				A17090D829B57A7C800F0716 /* SDWebImageManager.h in Headers */,
+				1D0F81D5F46BDA6A1B4B2FE0 /* SDWebImageOperation.h in Headers */,
+				8845EC34F386DA994287319E /* SDWebImagePrefetcher.h in Headers */,
+				B78C4F35CB1105CA03E6C47E /* UIButton+WebCache.h in Headers */,
+				FE3DD2D09D7EBF21D2A899D6 /* UIImage+GIF.h in Headers */,
+				CAF7E7C31BDC155D9BDC20DA /* UIImage+MultiFormat.h in Headers */,
+				883CA86D6DAAA2F6069BAB57 /* UIImageView+HighlightedWebCache.h in Headers */,
+				39F8A80C345B8B9ECDF9C1DA /* UIImageView+WebCache.h in Headers */,
+				D708E6FB177BA24A57A2708D /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59D8C5560A5697A2B6C0CAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B534300056031838867CA2E6 /* SPGripViewBorderView.h in Headers */,
+				01C85701E05501948FF05CA8 /* ZDStickerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0EA80FD506D8A31AA9DD93C7 /* Pods-PulsingHalo */ = {
+		30158AEBBF482E7D216346D2 /* Pods-ZDStickerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB2C79BAA754D6E8AC75B956 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */;
+			buildConfigurationList = D97A34B7EA165D694D9D4BE5 /* Build configuration list for PBXNativeTarget "Pods-ZDStickerView" */;
 			buildPhases = (
-				82DF8086BA07BB3112B77AA9 /* Sources */,
-				3EBA8B01391CE527CCC4ED47 /* Frameworks */,
-				A93EA9247B82C363AE065889 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-PulsingHalo";
-			productName = "Pods-PulsingHalo";
-			productReference = A93821689BAEC9F5562F9A90 /* libPods-PulsingHalo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7CFFD38B5D219565653F2B1D /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F3A2E7828593E15E4D3E09C /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				90468192553C2E38DDD1E1C6 /* Sources */,
-				D21CCDF6B9C6CE2E60DE54EB /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0D70C4C6D185BB10D6061A0A /* PBXTargetDependency */,
-				C33D3CFF949D82189F1A4C24 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = FBA049CCD2B677B3E490D088 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C39528A7A494BF7DBED2BB0A /* Pods-ZDStickerView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DFBE176EE1221F5B36EE04E /* Build configuration list for PBXNativeTarget "Pods-ZDStickerView" */;
-			buildPhases = (
-				9192AC58D294B702EC06CDD3 /* Sources */,
-				06D88E208C805CEF6D01E517 /* Frameworks */,
-				8EC77E08861F691F835C7B45 /* Headers */,
+				F740AF42E1157481968FEF68 /* Sources */,
+				5543579125A412F0D015068F /* Frameworks */,
+				F59D8C5560A5697A2B6C0CAD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -305,105 +940,284 @@
 			);
 			name = "Pods-ZDStickerView";
 			productName = "Pods-ZDStickerView";
-			productReference = F7132ACA17426EE4257112C0 /* libPods-ZDStickerView.a */;
+			productReference = 0DE5E88F63D1A5DB313918C5 /* libPods-ZDStickerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7B6D300A5D9EB2FAD9643FC3 /* Pods-PulsingHalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B55EB8C3B3542E851442F80 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */;
+			buildPhases = (
+				56D4D6DF90FD6D4D5BC899C9 /* Sources */,
+				58A0EFD160474E856FEF0A98 /* Frameworks */,
+				6D350B22CB81A53A6013838F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PulsingHalo";
+			productName = "Pods-PulsingHalo";
+			productReference = ABFC3D2A7870B283D5594DD7 /* libPods-PulsingHalo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		830070A48F91C0F03F085075 /* Pods-CLImageEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96635E9925FFCEF05D53523B /* Build configuration list for PBXNativeTarget "Pods-CLImageEditor" */;
+			buildPhases = (
+				6A775600DFB84965408C6A5C /* Sources */,
+				6EBF60F6BF2F3AD03E92CB50 /* Frameworks */,
+				62C634488EC4A86FD550048D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CLImageEditor";
+			productName = "Pods-CLImageEditor";
+			productReference = 30B4FA7B93A131D964781796 /* libPods-CLImageEditor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5020F2A492B918C57AFC878 /* Pods-Regexer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DD1356BFA52106ACAB283B /* Build configuration list for PBXNativeTarget "Pods-Regexer" */;
+			buildPhases = (
+				51186CE7F9AC5131C01F5353 /* Sources */,
+				A64BDD76BA73E19FC575FE51 /* Frameworks */,
+				5D718BACD77A8CF93705D62B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Regexer";
+			productName = "Pods-Regexer";
+			productReference = C8B08076ACCEA314FB77723A /* libPods-Regexer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CED120C92ED80CD9F5799133 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5792065B41F04A1B9B27BFE /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				2DCAB15F023C2D8280C2AB99 /* Sources */,
+				2CED9A5A321D2C4DF705DCD0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C930C2BE4762CEDDEE9F1DB0 /* PBXTargetDependency */,
+				1A8B03ABBAC363750DDB5C30 /* PBXTargetDependency */,
+				09BC4A3F085A88958AD9FD6B /* PBXTargetDependency */,
+				5C9775F46F7EC533603001FE /* PBXTargetDependency */,
+				B3757A7AEE6460B92892A880 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = D20DF5A4868DABB8AEE95368 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7CFCEBE4440585E03482DBA /* Pods-SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845C41C27D398D42FD75CB63 /* Build configuration list for PBXNativeTarget "Pods-SDWebImage" */;
+			buildPhases = (
+				F9E8494533A1B7D9163A17CA /* Sources */,
+				4A9273DD2FC978723A71DD23 /* Frameworks */,
+				C43ED098EAC6E5E4407B5B8A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SDWebImage";
+			productName = "Pods-SDWebImage";
+			productReference = 169A5F07833E2BDDFCD7BE14 /* libPods-SDWebImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7FF57E5741E7CEFDBBEDC703 /* Project object */ = {
+		FE091B3BD74CE32F804BCF3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 46663DEBC4506028FE825F2D /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = C82735A82EA8B47DF460FC01 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E5A65C18B9957FB0C4388990;
-			productRefGroup = B406DD31DE8FE38F093A18BE /* Products */;
+			mainGroup = 3011690619679C080121CB6D;
+			productRefGroup = D5C8E09E15AF92C994E41BE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7CFFD38B5D219565653F2B1D /* Pods */,
-				0EA80FD506D8A31AA9DD93C7 /* Pods-PulsingHalo */,
-				C39528A7A494BF7DBED2BB0A /* Pods-ZDStickerView */,
+				CED120C92ED80CD9F5799133 /* Pods */,
+				830070A48F91C0F03F085075 /* Pods-CLImageEditor */,
+				7B6D300A5D9EB2FAD9643FC3 /* Pods-PulsingHalo */,
+				B5020F2A492B918C57AFC878 /* Pods-Regexer */,
+				E7CFCEBE4440585E03482DBA /* Pods-SDWebImage */,
+				30158AEBBF482E7D216346D2 /* Pods-ZDStickerView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		82DF8086BA07BB3112B77AA9 /* Sources */ = {
+		2DCAB15F023C2D8280C2AB99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A7617C918EB04FF1D85E6B /* MultiplePulsingHaloLayer.m in Sources */,
-				1BA6C4E0620EC63917820093 /* Pods-PulsingHalo-dummy.m in Sources */,
-				B79A35F657EAE02A1748EA7C /* PulsingHaloLayer.m in Sources */,
+				353E418C2D153C51B9EA07A4 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90468192553C2E38DDD1E1C6 /* Sources */ = {
+		51186CE7F9AC5131C01F5353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB218771F07B4C0EAABF59D3 /* Pods-dummy.m in Sources */,
+				9BE83DDB57FC1435B7CE6DBB /* NSArray+Regexer.m in Sources */,
+				39FA7864F3C4DE3185D27F92 /* NSString+Regexer.m in Sources */,
+				755D5F7A63B97A4D8EE1B937 /* Pods-Regexer-dummy.m in Sources */,
+				6BB47F69019C431FBD8A3963 /* RXCapture.m in Sources */,
+				FC956B9648B98751A3F116AC /* RXMatch.m in Sources */,
+				F5C34070D3188BD57EC86EB3 /* RXRegexCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9192AC58D294B702EC06CDD3 /* Sources */ = {
+		56D4D6DF90FD6D4D5BC899C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7524A19F2F681187643BADE6 /* Pods-ZDStickerView-dummy.m in Sources */,
-				16F7BA202A21EC1C1F51B998 /* SPGripViewBorderView.m in Sources */,
-				F18D4D63387CB1AAB9F0A41B /* ZDStickerView.m in Sources */,
+				7256BB4DEDE3B4CD5AE9DF39 /* MultiplePulsingHaloLayer.m in Sources */,
+				0B062DE2F0966105795A5CE5 /* Pods-PulsingHalo-dummy.m in Sources */,
+				EF7F2441A0C21CB8AC2D17CD /* PulsingHaloLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A775600DFB84965408C6A5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E6B7F0C55749B20107B92A /* CLAdjustmentTool.m in Sources */,
+				CE30151A6EAE4B9552A002DE /* CLBloomEffect.m in Sources */,
+				DD470760CCB99CAFAD1393BC /* CLBlurTool.m in Sources */,
+				AAFADC8F157A9AD5FBF5A194 /* CLCircleView.m in Sources */,
+				825A68E8FC061865AD450DCF /* CLClassList.m in Sources */,
+				BDB29F0AEC56EC8D1455093F /* CLClippingTool.m in Sources */,
+				C50FC75D39FF76A48E6A887D /* CLColorPickerView.m in Sources */,
+				8DFCED644A2B8F1507FFF54D /* CLDrawTool.m in Sources */,
+				12DE8A682DD388B8D0AD4949 /* CLEffectBase.m in Sources */,
+				CDF91A1EA5531013F1EC198B /* CLEffectTool.m in Sources */,
+				5B5035852E65C377DE1EF1F6 /* CLFilterBase.m in Sources */,
+				785E35793C9163BCC8D9AE6B /* CLFilterTool.m in Sources */,
+				A465DDC039EDC29AE046DD16 /* CLFontPickerView.m in Sources */,
+				7A4E5011621B3864C6FE1521 /* CLGloomEffect.m in Sources */,
+				BB3F5CF347764E95CB5BE1E8 /* CLHighlightShadowEffect.m in Sources */,
+				93F67F0BD2306BBDE11507A9 /* CLHueEffect.m in Sources */,
+				88B1463C01AB98692BBE0E03 /* CLImageEditor.m in Sources */,
+				1ED86D0969CF8F05C4807007 /* CLImageEditorTheme+Private.m in Sources */,
+				B8FF931195F16BB81C56391E /* CLImageEditorTheme.m in Sources */,
+				980D08FACC3EFA42B4E80C4F /* CLImageToolBase.m in Sources */,
+				3BD4DE48F8B56591CFD05AEA /* CLImageToolInfo+Private.m in Sources */,
+				125984996253B90A275F6BEC /* CLImageToolInfo.m in Sources */,
+				07DE8D829DB1CA853D9CBB5A /* CLPickerDrum.m in Sources */,
+				C5B9BB575180C44F640D2292 /* CLPickerView.m in Sources */,
+				084224E147FF86A6DAF8184A /* CLPixellateEffect.m in Sources */,
+				8870862F40C292BF40632E37 /* CLPosterizeEffect.m in Sources */,
+				B11D258F74D22B943B19F0A4 /* CLResizeTool.m in Sources */,
+				3038B64B52EA33E615D418E1 /* CLRotateTool.m in Sources */,
+				8414A741E9C98B3D3BD8AEF7 /* CLSplashTool.m in Sources */,
+				34E249A27E5FC1C2A89F1C72 /* CLSplineInterpolator.m in Sources */,
+				8091AFE32933D60BB1183F81 /* CLSpotEffect.m in Sources */,
+				81D2A12754BF5F07FB4C2724 /* CLStickerTool.m in Sources */,
+				0277B659970D69C22DCECB8F /* CLTextLabel.m in Sources */,
+				A59823645888CFF93EB91B9C /* CLTextSettingView.m in Sources */,
+				47425A4888DA02384DA09285 /* CLTextTool.m in Sources */,
+				379EC2820E487AD05A32A124 /* CLToneCurveTool.m in Sources */,
+				C1A84D134F14994F5E934EFA /* CLToolbarMenuItem.m in Sources */,
+				D286737C618BD188F6FC269D /* Pods-CLImageEditor-dummy.m in Sources */,
+				BC8F42993970EF608CFA7758 /* UIDevice+SystemVersion.m in Sources */,
+				D6DED200C8910C5AC5E3CAC8 /* UIImage+Utility.m in Sources */,
+				BA26EAEA594635A6CCB9DF6D /* UIView+CLImageToolInfo.m in Sources */,
+				B35978E41076A1D13896767D /* UIView+Frame.m in Sources */,
+				CF91971674D81D0EC4D86F1C /* _CLImageEditorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F740AF42E1157481968FEF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63F94F1217850414618BB0F /* Pods-ZDStickerView-dummy.m in Sources */,
+				5089CFA5104ECCE455A7AAD4 /* SPGripViewBorderView.m in Sources */,
+				0F635A7830999690112E94B6 /* ZDStickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E8494533A1B7D9163A17CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BB9F9D70E98EC50564D2D64 /* NSData+ImageContentType.m in Sources */,
+				9E0605F881B5108950D2C360 /* Pods-SDWebImage-dummy.m in Sources */,
+				43F4698031F56A5D49296FC1 /* SDImageCache.m in Sources */,
+				5B6EE4A36CB9979DEAC4E45C /* SDWebImageCompat.m in Sources */,
+				3A89C730EF44BC78EEEF5DDA /* SDWebImageDecoder.m in Sources */,
+				0C6EA7C7B40A248EBFF3EAA6 /* SDWebImageDownloader.m in Sources */,
+				D350582C26629DC84E67CF10 /* SDWebImageDownloaderOperation.m in Sources */,
+				60D2637E6E04F37E4D056919 /* SDWebImageManager.m in Sources */,
+				A295843C59DD3EA96466CE6A /* SDWebImagePrefetcher.m in Sources */,
+				486A88221CDA6E5EC24890B3 /* UIButton+WebCache.m in Sources */,
+				D45FE64B9A277BD6316F1E7D /* UIImage+GIF.m in Sources */,
+				BC97AABEAF896F993C14F6AE /* UIImage+MultiFormat.m in Sources */,
+				8998B2973684CF9E93A4D29A /* UIImageView+HighlightedWebCache.m in Sources */,
+				663591DDD9DA1C8C98596740 /* UIImageView+WebCache.m in Sources */,
+				CC02614C5A2AEF88551E0FAF /* UIView+WebCacheOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0D70C4C6D185BB10D6061A0A /* PBXTargetDependency */ = {
+		09BC4A3F085A88958AD9FD6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Regexer";
+			target = B5020F2A492B918C57AFC878 /* Pods-Regexer */;
+			targetProxy = 8D9D8745339A3152AA5C5D2F /* PBXContainerItemProxy */;
+		};
+		1A8B03ABBAC363750DDB5C30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PulsingHalo";
-			target = 0EA80FD506D8A31AA9DD93C7 /* Pods-PulsingHalo */;
-			targetProxy = 4F64E996C646A44C26AA75E2 /* PBXContainerItemProxy */;
+			target = 7B6D300A5D9EB2FAD9643FC3 /* Pods-PulsingHalo */;
+			targetProxy = 588E400AC8E36998DB754A01 /* PBXContainerItemProxy */;
 		};
-		C33D3CFF949D82189F1A4C24 /* PBXTargetDependency */ = {
+		5C9775F46F7EC533603001FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SDWebImage";
+			target = E7CFCEBE4440585E03482DBA /* Pods-SDWebImage */;
+			targetProxy = 6C8A527CD4CFA8CDB984E2A2 /* PBXContainerItemProxy */;
+		};
+		B3757A7AEE6460B92892A880 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZDStickerView";
-			target = C39528A7A494BF7DBED2BB0A /* Pods-ZDStickerView */;
-			targetProxy = D7BD41EA2B24A9AD45BFB838 /* PBXContainerItemProxy */;
+			target = 30158AEBBF482E7D216346D2 /* Pods-ZDStickerView */;
+			targetProxy = 4CC6B47746441253C518087B /* PBXContainerItemProxy */;
+		};
+		C930C2BE4762CEDDEE9F1DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CLImageEditor";
+			target = 830070A48F91C0F03F085075 /* Pods-CLImageEditor */;
+			targetProxy = 3CE1FFCE4AA79E8A8EC97628 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		030C6432F8B9B7EF62BA03D4 /* Debug */ = {
+		14908DCE517BE7DF9428E71C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74FF2E794A86690EAB5084AC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0396F93FCBC09267AAC64BDF /* Pods-Regexer-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		03D45F0C5F730C9EC6AFD87C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Regexer/Pods-Regexer-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -414,9 +1228,9 @@
 			};
 			name = Release;
 		};
-		11C28E5AFA3C9A4FC25B7AC7 /* Debug */ = {
+		30226EF2F6D0E002136D374D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */;
+			baseConfigurationReference = EB4487F8EC22BE22003E5169 /* Pods-ZDStickerView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZDStickerView/Pods-ZDStickerView-prefix.pch";
@@ -430,39 +1244,23 @@
 			};
 			name = Debug;
 		};
-		39E530061562C45CC4C6F11C /* Debug */ = {
+		4C45402D0C6074FC55556DDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5A957F1C2557C971B563825 /* Pods-PulsingHalo-Private.xcconfig */;
+			baseConfigurationReference = EB4487F8EC22BE22003E5169 /* Pods-ZDStickerView-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		95BA74BA4C82E07DEF8C5D99 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E30451747B7900F4454EFA51 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZDStickerView/Pods-ZDStickerView-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		C3AC3FA6938E60E411F8BBF5 /* Release */ = {
+		53B47C7CF42A713DA160E07B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -496,12 +1294,12 @@
 			};
 			name = Release;
 		};
-		D3EE93F1D450CE35904EC1B9 /* Release */ = {
+		588CBACC902D0A14CD877FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21D1B5188CA14009A733B47E /* Pods-ZDStickerView-Private.xcconfig */;
+			baseConfigurationReference = 31143CFF04993594009E5E1D /* Pods-CLImageEditor-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ZDStickerView/Pods-ZDStickerView-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CLImageEditor/Pods-CLImageEditor-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -512,7 +1310,55 @@
 			};
 			name = Release;
 		};
-		FDCF233A573B0372A0FF4F71 /* Debug */ = {
+		68814419876551EFFE546363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171A264EEBB9F413F4E9FB60 /* Pods-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		797F9D769C1F09EB269EA7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF3D9266A33D7C17A00E4FB /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		93362DBFA89126FDC1BBA490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98376A925E87D7D24E4BCE0 /* Pods-PulsingHalo-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B2BC1A5CE77619C2FEC7980A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -551,46 +1397,153 @@
 			};
 			name = Debug;
 		};
+		B36D9DB4277C8BCB56242D3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31143CFF04993594009E5E1D /* Pods-CLImageEditor-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CLImageEditor/Pods-CLImageEditor-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B59AD8659EC1CB5793C12B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6643ECCA8D9F9FCF5A64C658 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C0E5AF316DD3AB1F5CFB288B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0396F93FCBC09267AAC64BDF /* Pods-Regexer-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Regexer/Pods-Regexer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DEBDB993BF43BC69B418A03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B98376A925E87D7D24E4BCE0 /* Pods-PulsingHalo-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PulsingHalo/Pods-PulsingHalo-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F319163D8E2F9C762CAA76F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171A264EEBB9F413F4E9FB60 /* Pods-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SDWebImage/Pods-SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F3A2E7828593E15E4D3E09C /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		0B55EB8C3B3542E851442F80 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				030C6432F8B9B7EF62BA03D4 /* Debug */,
-				95BA74BA4C82E07DEF8C5D99 /* Release */,
+				DEBDB993BF43BC69B418A03F /* Debug */,
+				93362DBFA89126FDC1BBA490 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46663DEBC4506028FE825F2D /* Build configuration list for PBXProject "Pods" */ = {
+		845C41C27D398D42FD75CB63 /* Build configuration list for PBXNativeTarget "Pods-SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDCF233A573B0372A0FF4F71 /* Debug */,
-				C3AC3FA6938E60E411F8BBF5 /* Release */,
+				F319163D8E2F9C762CAA76F2 /* Debug */,
+				68814419876551EFFE546363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DFBE176EE1221F5B36EE04E /* Build configuration list for PBXNativeTarget "Pods-ZDStickerView" */ = {
+		96635E9925FFCEF05D53523B /* Build configuration list for PBXNativeTarget "Pods-CLImageEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11C28E5AFA3C9A4FC25B7AC7 /* Debug */,
-				D3EE93F1D450CE35904EC1B9 /* Release */,
+				B36D9DB4277C8BCB56242D3E /* Debug */,
+				588CBACC902D0A14CD877FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB2C79BAA754D6E8AC75B956 /* Build configuration list for PBXNativeTarget "Pods-PulsingHalo" */ = {
+		C5792065B41F04A1B9B27BFE /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39E530061562C45CC4C6F11C /* Debug */,
-				03D45F0C5F730C9EC6AFD87C /* Release */,
+				B59AD8659EC1CB5793C12B5F /* Debug */,
+				797F9D769C1F09EB269EA7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C82735A82EA8B47DF460FC01 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2BC1A5CE77619C2FEC7980A /* Debug */,
+				53B47C7CF42A713DA160E07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D97A34B7EA165D694D9D4BE5 /* Build configuration list for PBXNativeTarget "Pods-ZDStickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30226EF2F6D0E002136D374D /* Debug */,
+				4C45402D0C6074FC55556DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4DD1356BFA52106ACAB283B /* Build configuration list for PBXNativeTarget "Pods-Regexer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E5AF316DD3AB1F5CFB288B /* Debug */,
+				14908DCE517BE7DF9428E71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7FF57E5741E7CEFDBBEDC703 /* Project object */;
+	rootObject = FE091B3BD74CE32F804BCF3D /* Project object */;
 }

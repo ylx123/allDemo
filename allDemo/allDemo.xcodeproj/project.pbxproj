@@ -14,7 +14,8 @@
 		B513A6E11AB9AA560052A162 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B513A6E01AB9AA560052A162 /* UIColorExtensions.swift */; };
 		B513A6E41AB9AFDC0052A162 /* microphone_act@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B513A6E21AB9AFDC0052A162 /* microphone_act@2x.png */; };
 		B513A6E51AB9AFDC0052A162 /* microphone_dis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B513A6E31AB9AFDC0052A162 /* microphone_dis@2x.png */; };
-		B5A743AA1ABC2416007241B9 /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A743A91ABC2416007241B9 /* StickerViewController.swift */; };
+		B539C5551AC138B9008B7CE6 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539C5541AC138B9008B7CE6 /* EventViewController.swift */; };
+		B539C5571AC1394C008B7CE6 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539C5561AC1394C008B7CE6 /* SubView.swift */; };
 		B5B090BA1AB7C4FB0055C52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090B91AB7C4FB0055C52B /* AppDelegate.swift */; };
 		B5B090BD1AB7C4FB0055C52B /* allDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5B090BB1AB7C4FB0055C52B /* allDemo.xcdatamodeld */; };
 		B5B090BF1AB7C4FB0055C52B /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090BE1AB7C4FB0055C52B /* RootController.swift */; };
@@ -24,12 +25,18 @@
 		B5B090D31AB7C4FB0055C52B /* allDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090D21AB7C4FB0055C52B /* allDemoTests.swift */; };
 		B5B090DF1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090DE1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift */; };
 		B5B165801AB96D19009A55E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B1657F1AB96D19009A55E6 /* QuartzCore.framework */; };
+		B5B1BCE31ABD4E9800F7FB98 /* ImageEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1BCE21ABD4E9800F7FB98 /* ImageEditorViewController.swift */; };
+		B5B1BCE91ABD5EFA00F7FB98 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1BCE51ABD5EFA00F7FB98 /* ResultViewController.swift */; };
+		B5B1BCEA1ABD5EFA00F7FB98 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1BCE61ABD5EFA00F7FB98 /* Sticker.swift */; };
+		B5B1BCEB1ABD5EFA00F7FB98 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1BCE71ABD5EFA00F7FB98 /* StickerView.swift */; };
+		B5B1BCEC1ABD5EFA00F7FB98 /* StickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1BCE81ABD5EFA00F7FB98 /* StickerViewController.swift */; };
 		B5B485011ABA5E6900BE8854 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B484FF1ABA5E1D00BE8854 /* AudioToolbox.framework */; };
 		B5B485051ABA5E9F00BE8854 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B485041ABA5E9F00BE8854 /* AudioToolbox.framework */; };
 		B5B485071ABA6C4B00BE8854 /* CAAnimationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B485061ABA6C4B00BE8854 /* CAAnimationExtensions.swift */; };
 		B5B7EFF81AB85B7F00275205 /* TagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7EFF71AB85B7F00275205 /* TagController.swift */; };
 		B5B7EFFC1AB85D1E00275205 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B7EFFB1AB85D1E00275205 /* img1.jpg */; };
 		B5B7EFFF1AB86C6500275205 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7EFFE1AB86C6500275205 /* RecorderViewController.swift */; };
+		B5BB3D831AC3DA3A00A39CB2 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BB3D821AC3DA3A00A39CB2 /* Regex.swift */; };
 		E38A2F86FEE4582337D76049 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21B5C8291F38CE1246BFD6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +62,8 @@
 		B513A6E01AB9AA560052A162 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		B513A6E21AB9AFDC0052A162 /* microphone_act@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone_act@2x.png"; sourceTree = "<group>"; };
 		B513A6E31AB9AFDC0052A162 /* microphone_dis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone_dis@2x.png"; sourceTree = "<group>"; };
-		B5A743A91ABC2416007241B9 /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
+		B539C5541AC138B9008B7CE6 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		B539C5561AC1394C008B7CE6 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		B5B090B41AB7C4FB0055C52B /* allDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = allDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B090B81AB7C4FB0055C52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B090B91AB7C4FB0055C52B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,12 +77,19 @@
 		B5B090D21AB7C4FB0055C52B /* allDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allDemoTests.swift; sourceTree = "<group>"; };
 		B5B090DE1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionViewWithHeaderViewController.swift; sourceTree = "<group>"; };
 		B5B1657F1AB96D19009A55E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B5B1BCE21ABD4E9800F7FB98 /* ImageEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditorViewController.swift; sourceTree = "<group>"; };
+		B5B1BCE51ABD5EFA00F7FB98 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B5B1BCE61ABD5EFA00F7FB98 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		B5B1BCE71ABD5EFA00F7FB98 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		B5B1BCE81ABD5EFA00F7FB98 /* StickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerViewController.swift; sourceTree = "<group>"; };
 		B5B484FF1ABA5E1D00BE8854 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B5B485041ABA5E9F00BE8854 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B5B485061ABA6C4B00BE8854 /* CAAnimationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAnimationExtensions.swift; sourceTree = "<group>"; };
 		B5B7EFF71AB85B7F00275205 /* TagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagController.swift; sourceTree = "<group>"; };
 		B5B7EFFB1AB85D1E00275205 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		B5B7EFFE1AB86C6500275205 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
+		B5BB3D811AC3D9BF00A39CB2 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		B5BB3D821AC3DA3A00A39CB2 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		DF21B5C8291F38CE1246BFD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +137,7 @@
 		B513A6DD1AB99A620052A162 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				B5BB3D821AC3DA3A00A39CB2 /* Regex.swift */,
 				B513A6E01AB9AA560052A162 /* UIColorExtensions.swift */,
 				B513A6DE1AB99A900052A162 /* TimerEx.swift */,
 				B5B485061ABA6C4B00BE8854 /* CAAnimationExtensions.swift */,
@@ -130,12 +146,13 @@
 			path = allDemo/lib;
 			sourceTree = SOURCE_ROOT;
 		};
-		B5A743A81ABC2409007241B9 /* sticker */ = {
+		B539C5531AC138AB008B7CE6 /* event */ = {
 			isa = PBXGroup;
 			children = (
-				B5A743A91ABC2416007241B9 /* StickerViewController.swift */,
+				B539C5541AC138B9008B7CE6 /* EventViewController.swift */,
+				B539C5561AC1394C008B7CE6 /* SubView.swift */,
 			);
-			path = sticker;
+			path = event;
 			sourceTree = "<group>";
 		};
 		B5B090AB1AB7C4FB0055C52B = {
@@ -173,6 +190,7 @@
 				B5B090C51AB7C4FB0055C52B /* LaunchScreen.xib */,
 				B5B090BB1AB7C4FB0055C52B /* allDemo.xcdatamodeld */,
 				B5B090B71AB7C4FB0055C52B /* Supporting Files */,
+				B5BB3D811AC3D9BF00A39CB2 /* MyPlayground.playground */,
 			);
 			path = allDemo;
 			sourceTree = "<group>";
@@ -205,7 +223,9 @@
 		B5B090DC1AB7CA5A0055C52B /* demos */ = {
 			isa = PBXGroup;
 			children = (
-				B5A743A81ABC2409007241B9 /* sticker */,
+				B539C5531AC138AB008B7CE6 /* event */,
+				B5B1BCE41ABD5EFA00F7FB98 /* sticker */,
+				B5B1BCE11ABD4E1800F7FB98 /* imageeditor */,
 				B513A6D61AB97FE80052A162 /* oc */,
 				B5B7EFFD1AB86C5700275205 /* RecordController */,
 				B5B7EFF61AB85B6B00275205 /* TagController */,
@@ -220,6 +240,25 @@
 				B5B090DE1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift */,
 			);
 			path = collectionViewWithHeader;
+			sourceTree = "<group>";
+		};
+		B5B1BCE11ABD4E1800F7FB98 /* imageeditor */ = {
+			isa = PBXGroup;
+			children = (
+				B5B1BCE21ABD4E9800F7FB98 /* ImageEditorViewController.swift */,
+			);
+			path = imageeditor;
+			sourceTree = "<group>";
+		};
+		B5B1BCE41ABD5EFA00F7FB98 /* sticker */ = {
+			isa = PBXGroup;
+			children = (
+				B5B1BCE51ABD5EFA00F7FB98 /* ResultViewController.swift */,
+				B5B1BCE61ABD5EFA00F7FB98 /* Sticker.swift */,
+				B5B1BCE71ABD5EFA00F7FB98 /* StickerView.swift */,
+				B5B1BCE81ABD5EFA00F7FB98 /* StickerViewController.swift */,
+			);
+			path = sticker;
 			sourceTree = "<group>";
 		};
 		B5B7EFF61AB85B6B00275205 /* TagController */ = {
@@ -406,15 +445,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B7EFFF1AB86C6500275205 /* RecorderViewController.swift in Sources */,
+				B5BB3D831AC3DA3A00A39CB2 /* Regex.swift in Sources */,
 				B5B090BF1AB7C4FB0055C52B /* RootController.swift in Sources */,
-				B5A743AA1ABC2416007241B9 /* StickerViewController.swift in Sources */,
+				B5B1BCEC1ABD5EFA00F7FB98 /* StickerViewController.swift in Sources */,
+				B5B1BCE31ABD4E9800F7FB98 /* ImageEditorViewController.swift in Sources */,
 				B5B485071ABA6C4B00BE8854 /* CAAnimationExtensions.swift in Sources */,
+				B539C5551AC138B9008B7CE6 /* EventViewController.swift in Sources */,
+				B5B1BCEA1ABD5EFA00F7FB98 /* Sticker.swift in Sources */,
 				B5B7EFF81AB85B7F00275205 /* TagController.swift in Sources */,
 				B513A6DC1AB980440052A162 /* Conformer.swift in Sources */,
 				B513A6DF1AB99A900052A162 /* TimerEx.swift in Sources */,
 				B5B090BD1AB7C4FB0055C52B /* allDemo.xcdatamodeld in Sources */,
 				B513A6E11AB9AA560052A162 /* UIColorExtensions.swift in Sources */,
+				B539C5571AC1394C008B7CE6 /* SubView.swift in Sources */,
+				B5B1BCE91ABD5EFA00F7FB98 /* ResultViewController.swift in Sources */,
 				B5B090DF1AB7CA9D0055C52B /* collectionViewWithHeaderViewController.swift in Sources */,
+				B5B1BCEB1ABD5EFA00F7FB98 /* StickerView.swift in Sources */,
 				B513A6D21AB97A2A0052A162 /* CircleView.swift in Sources */,
 				B5B090BA1AB7C4FB0055C52B /* AppDelegate.swift in Sources */,
 				B513A6DA1AB97FFB0052A162 /* MyProtocol.m in Sources */,

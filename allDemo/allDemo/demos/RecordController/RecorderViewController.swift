@@ -240,11 +240,16 @@ class RecorderViewController: UIViewController,AVAudioRecorderDelegate,AVAudioPl
         }
         
         var recordSettings = [
-            AVFormatIDKey: kAudioFormatAppleLossless,
-            AVEncoderAudioQualityKey : AVAudioQuality.Max.rawValue,
-            AVEncoderBitRateKey : 320000,
-            AVNumberOfChannelsKey: 2,
-            AVSampleRateKey : 44100.0
+            AVFormatIDKey: kAudioFormatMPEG4AAC,
+            AVEncoderAudioQualityKey : AVAudioQuality.Min.rawValue,
+            AVEncoderBitRateKey : 16000,
+            AVNumberOfChannelsKey: 1,
+            AVSampleRateKey : 16000.0
+//            AVFormatIDKey: kAudioFormatAppleLossless,
+//            AVEncoderAudioQualityKey : AVAudioQuality.Max.rawValue,
+//            AVEncoderBitRateKey : 320000,
+//            AVNumberOfChannelsKey: 2,
+//            AVSampleRateKey : 44100.0
         ]
         var error: NSError?
         recorder = AVAudioRecorder(URL: soundFileURL!, settings: recordSettings, error: &error)

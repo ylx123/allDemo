@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C39528A7A494BF7DBED2BB0A"
+               BlueprintIdentifier = "30158AEBBF482E7D216346D2"
                BuildableName = "libPods-ZDStickerView.a"
                BlueprintName = "Pods-ZDStickerView"
                ReferencedContainer = "container:Pods.xcodeproj">

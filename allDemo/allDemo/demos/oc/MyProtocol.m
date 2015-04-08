@@ -7,7 +7,11 @@
 //
 
 #import "MyProtocol.h"
+#import "allDemo-Swift.h"
 
 @implementation MyProtocol
 
+- (void) test{
+    [[StickerViewController alloc] init];
+}
 @end
