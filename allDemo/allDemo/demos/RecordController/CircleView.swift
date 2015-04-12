@@ -59,7 +59,7 @@ class CircleView: UIView {
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         
 
-        circleLayer.strokeEnd = CGFloat(animation.toValue as NSNumber)
+        circleLayer.strokeEnd = CGFloat(animation.toValue as! NSNumber)
         
         
         circleLayer.addAnimation(animation, forKey: "animateCircle")

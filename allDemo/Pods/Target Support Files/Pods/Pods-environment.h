@@ -46,13 +46,7 @@
 #define COCOAPODS_POD_AVAILABLE_PulsingHalo
 #define COCOAPODS_VERSION_MAJOR_PulsingHalo 0
 #define COCOAPODS_VERSION_MINOR_PulsingHalo 0
-#define COCOAPODS_VERSION_PATCH_PulsingHalo 4
-
-// Regexer
-#define COCOAPODS_POD_AVAILABLE_Regexer
-#define COCOAPODS_VERSION_MAJOR_Regexer 1
-#define COCOAPODS_VERSION_MINOR_Regexer 3
-#define COCOAPODS_VERSION_PATCH_Regexer 1
+#define COCOAPODS_VERSION_PATCH_PulsingHalo 5
 
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage

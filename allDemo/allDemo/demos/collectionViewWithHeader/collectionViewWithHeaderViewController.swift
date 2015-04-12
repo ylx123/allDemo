@@ -42,7 +42,7 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell
         if(indexPath.row % 2 == 0){
             cell.backgroundColor = UIColor.yellowColor()
             
@@ -56,7 +56,7 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         return 50
     }
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "Header", forIndexPath: indexPath) as UICollectionReusableView
+        var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "Header", forIndexPath: indexPath) as! UICollectionReusableView
         if(kind == UICollectionElementKindSectionHeader){
             view.backgroundColor = UIColor.blueColor()
             var title = UILabel(frame: view.frame)

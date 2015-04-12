@@ -2,5 +2,5 @@
 
 import UIKit
 
-var arr:Array<String>?
-var x = arr?.count
+var x = 1.000001
+var s = NSString(format: "%0.1f", x)

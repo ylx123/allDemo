@@ -43,12 +43,12 @@ extension UIColor {
         let scanner = NSScanner(string: hex)
         var hexValue: UInt32 = 0
         if scanner.scanHexInt(&hexValue) {
-            if countElements(hex) == 8 {
+            if count(hex) == 8 {
                 red   = CGFloat((hexValue & 0xFF000000) >> 24) / 255.0
                 green = CGFloat((hexValue & 0x00FF0000) >> 16) / 255.0
                 blue  = CGFloat((hexValue & 0x0000FF00) >> 8) / 255.0
                 alpha = CGFloat((hexValue & 0x000000FF)) / 255.0
-            } else if countElements(hex) == 6 {
+            } else if count(hex) == 6 {
                 red   = CGFloat((hexValue & 0xFF0000) >> 16) / 255.0
                 green = CGFloat((hexValue & 0x00FF00) >> 8) / 255.0
                 blue  = CGFloat((hexValue & 0x0000FF)) / 255.0
@@ -71,7 +71,7 @@ extension UIColor {
         var blueDec = Int(blue * 255)
         var returnString = NSString(format: "%02x%02x%02x", redDec, greenDec, blueDec)
        
-        return returnString
+        return returnString as String
     
     }
     

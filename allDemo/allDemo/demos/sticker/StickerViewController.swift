@@ -82,7 +82,7 @@ class StickerViewController: UIViewController,ZDStickerViewDelegate,UICollection
     
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell
         for i in cell.subviews {
             i.removeFromSuperview()
         }
@@ -113,7 +113,7 @@ class StickerViewController: UIViewController,ZDStickerViewDelegate,UICollection
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         var cell = collectionView.cellForItemAtIndexPath(indexPath)
-        var imgv = cell!.viewWithTag(1) as UIImageView
+        var imgv = cell!.viewWithTag(1) as! UIImageView
         var img = imgv.image
         var sticker = Sticker(image: imgv.image!, id: indexPath.row)
         

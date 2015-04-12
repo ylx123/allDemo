@@ -13,9 +13,7 @@ class StickerView: ZDStickerView {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    override init() {
-        super.init()
-    }
+
     init(sticker:Sticker) {
         
         var x:Int = Int(arc4random_uniform(200))
