@@ -14,9 +14,11 @@
 		B513A6E11AB9AA560052A162 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B513A6E01AB9AA560052A162 /* UIColorExtensions.swift */; };
 		B513A6E41AB9AFDC0052A162 /* microphone_act@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B513A6E21AB9AFDC0052A162 /* microphone_act@2x.png */; };
 		B513A6E51AB9AFDC0052A162 /* microphone_dis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B513A6E31AB9AFDC0052A162 /* microphone_dis@2x.png */; };
+		B530FFD11ADA978A000D5517 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B530FFD01ADA978A000D5517 /* libz.dylib */; };
 		B539C5551AC138B9008B7CE6 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539C5541AC138B9008B7CE6 /* EventViewController.swift */; };
 		B539C5571AC1394C008B7CE6 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539C5561AC1394C008B7CE6 /* SubView.swift */; };
 		B53D3E2D1ADA640300DC4BF4 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D3E2C1ADA640300DC4BF4 /* Regex.swift */; };
+		B56C06291AE4CC3A004F5D5F /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C06281AE4CC3A004F5D5F /* PickerViewController.swift */; };
 		B58B16231AD7818200F05BDE /* graphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B16221AD7818200F05BDE /* graphViewController.swift */; };
 		B5B090BA1AB7C4FB0055C52B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B090B91AB7C4FB0055C52B /* AppDelegate.swift */; };
 		B5B090BD1AB7C4FB0055C52B /* allDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5B090BB1AB7C4FB0055C52B /* allDemo.xcdatamodeld */; };
@@ -40,6 +42,13 @@
 		B5B7EFFF1AB86C6500275205 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B7EFFE1AB86C6500275205 /* RecorderViewController.swift */; };
 		B5E748B51AD7D55900E210DB /* selectBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E748B41AD7D55900E210DB /* selectBar.swift */; };
 		B5E748B71AD7D56F00E210DB /* SelectTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E748B61AD7D56F00E210DB /* SelectTestViewController.swift */; };
+		B5FBDBA21ADE8C47002793EC /* QQLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBDBA11ADE8C47002793EC /* QQLoginViewController.swift */; };
+		B5FBDBA51ADE8D11002793EC /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5FBDBA31ADE8D11002793EC /* TencentOpenApi_IOS_Bundle.bundle */; };
+		B5FBDBA61ADE8D11002793EC /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FBDBA41ADE8D11002793EC /* TencentOpenAPI.framework */; };
+		B5FBDBA81ADE8E9A002793EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FBDBA71ADE8E9A002793EC /* Security.framework */; };
+		B5FBDBAA1ADE8EAF002793EC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FBDBA91ADE8EAF002793EC /* libiconv.dylib */; };
+		B5FBDBAC1ADE8EBA002793EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FBDBAB1ADE8EBA002793EC /* SystemConfiguration.framework */; };
+		B5FBDBAE1ADE8EC5002793EC /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FBDBAD1ADE8EC5002793EC /* libstdc++.dylib */; };
 		E38A2F86FEE4582337D76049 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF21B5C8291F38CE1246BFD6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,9 +74,11 @@
 		B513A6E01AB9AA560052A162 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		B513A6E21AB9AFDC0052A162 /* microphone_act@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone_act@2x.png"; sourceTree = "<group>"; };
 		B513A6E31AB9AFDC0052A162 /* microphone_dis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone_dis@2x.png"; sourceTree = "<group>"; };
+		B530FFD01ADA978A000D5517 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		B539C5541AC138B9008B7CE6 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		B539C5561AC1394C008B7CE6 /* SubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		B53D3E2C1ADA640300DC4BF4 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		B56C06281AE4CC3A004F5D5F /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		B58B16221AD7818200F05BDE /* graphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = graphViewController.swift; sourceTree = "<group>"; };
 		B5B090B41AB7C4FB0055C52B /* allDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = allDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B090B81AB7C4FB0055C52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +107,13 @@
 		B5BB3D811AC3D9BF00A39CB2 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		B5E748B41AD7D55900E210DB /* selectBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectBar.swift; sourceTree = "<group>"; };
 		B5E748B61AD7D56F00E210DB /* SelectTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTestViewController.swift; sourceTree = "<group>"; };
+		B5FBDBA11ADE8C47002793EC /* QQLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLoginViewController.swift; sourceTree = "<group>"; };
+		B5FBDBA31ADE8D11002793EC /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		B5FBDBA41ADE8D11002793EC /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		B5FBDBA71ADE8E9A002793EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B5FBDBA91ADE8EAF002793EC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		B5FBDBAB1ADE8EBA002793EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5FBDBAD1ADE8EC5002793EC /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		DF21B5C8291F38CE1246BFD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -104,6 +122,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B530FFD11ADA978A000D5517 /* libz.dylib in Frameworks */,
+				B5FBDBAE1ADE8EC5002793EC /* libstdc++.dylib in Frameworks */,
+				B5FBDBAC1ADE8EBA002793EC /* SystemConfiguration.framework in Frameworks */,
+				B5FBDBAA1ADE8EAF002793EC /* libiconv.dylib in Frameworks */,
+				B5FBDBA81ADE8E9A002793EC /* Security.framework in Frameworks */,
+				B5FBDBA61ADE8D11002793EC /* TencentOpenAPI.framework in Frameworks */,
 				B5B485011ABA5E6900BE8854 /* AudioToolbox.framework in Frameworks */,
 				B5B165801AB96D19009A55E6 /* QuartzCore.framework in Frameworks */,
 				E38A2F86FEE4582337D76049 /* libPods.a in Frameworks */,
@@ -124,6 +148,13 @@
 		841001EA1D4FB06BD5915874 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5FBDBAD1ADE8EC5002793EC /* libstdc++.dylib */,
+				B5FBDBAB1ADE8EBA002793EC /* SystemConfiguration.framework */,
+				B5FBDBA91ADE8EAF002793EC /* libiconv.dylib */,
+				B5FBDBA71ADE8E9A002793EC /* Security.framework */,
+				B5FBDBA31ADE8D11002793EC /* TencentOpenApi_IOS_Bundle.bundle */,
+				B5FBDBA41ADE8D11002793EC /* TencentOpenAPI.framework */,
+				B530FFD01ADA978A000D5517 /* libz.dylib */,
 				B5B484FF1ABA5E1D00BE8854 /* AudioToolbox.framework */,
 				DF21B5C8291F38CE1246BFD6 /* libPods.a */,
 			);
@@ -159,6 +190,14 @@
 				B539C5561AC1394C008B7CE6 /* SubView.swift */,
 			);
 			path = event;
+			sourceTree = "<group>";
+		};
+		B56C06271AE4CC20004F5D5F /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				B56C06281AE4CC3A004F5D5F /* PickerViewController.swift */,
+			);
+			path = picker;
 			sourceTree = "<group>";
 		};
 		B58B161E1AD7812F00F05BDE /* graph */ = {
@@ -237,6 +276,8 @@
 		B5B090DC1AB7CA5A0055C52B /* demos */ = {
 			isa = PBXGroup;
 			children = (
+				B56C06271AE4CC20004F5D5F /* picker */,
+				B5FBDBA01ADE8C34002793EC /* qq */,
 				B5E748B31AD7D54700E210DB /* selecter */,
 				B58B161E1AD7812F00F05BDE /* graph */,
 				B539C5531AC138AB008B7CE6 /* event */,
@@ -320,6 +361,14 @@
 				B5E748B61AD7D56F00E210DB /* SelectTestViewController.swift */,
 			);
 			path = selecter;
+			sourceTree = "<group>";
+		};
+		B5FBDBA01ADE8C34002793EC /* qq */ = {
+			isa = PBXGroup;
+			children = (
+				B5FBDBA11ADE8C47002793EC /* QQLoginViewController.swift */,
+			);
+			path = qq;
 			sourceTree = "<group>";
 		};
 		E35E6621426994CA7AE5C663 /* Pods */ = {
@@ -417,6 +466,7 @@
 				B513A6E51AB9AFDC0052A162 /* microphone_dis@2x.png in Resources */,
 				B5B090C21AB7C4FB0055C52B /* Main.storyboard in Resources */,
 				B513A6E41AB9AFDC0052A162 /* microphone_act@2x.png in Resources */,
+				B5FBDBA51ADE8D11002793EC /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				B5B090C71AB7C4FB0055C52B /* LaunchScreen.xib in Resources */,
 				B5B090C41AB7C4FB0055C52B /* Images.xcassets in Resources */,
 			);
@@ -469,8 +519,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FBDBA21ADE8C47002793EC /* QQLoginViewController.swift in Sources */,
 				B5B7EFFF1AB86C6500275205 /* RecorderViewController.swift in Sources */,
 				B58B16231AD7818200F05BDE /* graphViewController.swift in Sources */,
+				B56C06291AE4CC3A004F5D5F /* PickerViewController.swift in Sources */,
 				B5B090BF1AB7C4FB0055C52B /* RootController.swift in Sources */,
 				B5B1BCEC1ABD5EFA00F7FB98 /* StickerViewController.swift in Sources */,
 				B5B1BCE31ABD4E9800F7FB98 /* ImageEditorViewController.swift in Sources */,
@@ -618,8 +670,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = allDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-CLImageEditor\"",
+					"-l\"Pods-PulsingHalo\"",
+					"-l\"Pods-SDWebImage\"",
+					"-l\"Pods-ZDStickerView\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-fobjc-arc",
+				);
+				PATH = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin;
+				"PATH[arch=*]" = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "allDemo/demos/oc/allDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -632,8 +709,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = allDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-CLImageEditor\"",
+					"-l\"Pods-PulsingHalo\"",
+					"-l\"Pods-SDWebImage\"",
+					"-l\"Pods-ZDStickerView\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-fobjc-arc",
+				);
+				PATH = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "allDemo/demos/oc/allDemo-Bridging-Header.h";
 			};

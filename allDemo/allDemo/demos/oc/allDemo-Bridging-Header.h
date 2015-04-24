@@ -9,3 +9,6 @@
 #import "UIImageView+WebCache.h"
 #import "CLImageEditor.h"
 
+#import <TencentOpenApi/TencentOAuth.h>
+#import <TencentOpenApi/QQApiInterface.h>
+

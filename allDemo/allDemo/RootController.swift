@@ -20,8 +20,9 @@ class RootController: UITableViewController,UITableViewDataSource,UITableViewDel
         
         self.title = "allDemo"
         
-        var testStr = "你好zhongguo"
-        println(testStr.grep("/zhong/").boolValue)
+ 
+        var xfloat:CGFloat = CGFloat(1.0)
+        println(Int(xfloat))
         
         
         items.append("collectionViewWithHeader")
@@ -31,6 +32,8 @@ class RootController: UITableViewController,UITableViewDataSource,UITableViewDel
         items.append("事件")
         items.append("画图")
         items.append("选择器")
+        items.append("qq登录")
+        items.append("选择器")
         controllers.append(collectionViewWithHeaderViewController())
         controllers.append(TagController())
         controllers.append(RecorderViewController())
@@ -38,6 +41,8 @@ class RootController: UITableViewController,UITableViewDataSource,UITableViewDel
         controllers.append(EventViewController())
         controllers.append(graphViewController())
         controllers.append(SelectTestViewController())
+        controllers.append(QQLoginViewController())
+        controllers.append(PickerViewController())
         // Do any additional setup after loading the view, typically from a nib.
     }
 
