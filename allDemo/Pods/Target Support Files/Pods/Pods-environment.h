@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_CLImageEditor_TextTool 1
 #define COCOAPODS_VERSION_PATCH_CLImageEditor_TextTool 3
 
+// LXReorderableCollectionViewFlowLayout
+#define COCOAPODS_POD_AVAILABLE_LXReorderableCollectionViewFlowLayout
+#define COCOAPODS_VERSION_MAJOR_LXReorderableCollectionViewFlowLayout 0
+#define COCOAPODS_VERSION_MINOR_LXReorderableCollectionViewFlowLayout 1
+#define COCOAPODS_VERSION_PATCH_LXReorderableCollectionViewFlowLayout 1
+
 // PulsingHalo
 #define COCOAPODS_POD_AVAILABLE_PulsingHalo
 #define COCOAPODS_VERSION_MAJOR_PulsingHalo 0

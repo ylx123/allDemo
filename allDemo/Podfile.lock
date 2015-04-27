@@ -10,6 +10,7 @@ PODS:
     - CLImageEditor/Core
   - CLImageEditor/TextTool (0.1.3):
     - CLImageEditor/Core
+  - LXReorderableCollectionViewFlowLayout (0.1.1)
   - PulsingHalo (0.0.5)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - CLImageEditor/SplashTool
   - CLImageEditor/StickerTool
   - CLImageEditor/TextTool
+  - LXReorderableCollectionViewFlowLayout
   - PulsingHalo (from `https://github.com/shu223/PulsingHalo.git`)
   - SDWebImage
   - ZDStickerView
@@ -37,8 +39,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   CLImageEditor: c54336f80300d47694f7e5e95f6c0a1632ad503d
+  LXReorderableCollectionViewFlowLayout: c89e0f693744c5cb96718822a8455a7de99d90ea
   PulsingHalo: 2b56945130aee4dee594a03df9df3fd32d285373
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   ZDStickerView: d6d294eab5ccd3794273c652ce8fa5dc43b72032
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.36.4

@@ -34,6 +34,7 @@ class RootController: UITableViewController,UITableViewDataSource,UITableViewDel
         items.append("选择器")
         items.append("qq登录")
         items.append("选择器")
+        items.append("旋转")
         controllers.append(collectionViewWithHeaderViewController())
         controllers.append(TagController())
         controllers.append(RecorderViewController())
@@ -43,6 +44,7 @@ class RootController: UITableViewController,UITableViewDataSource,UITableViewDel
         controllers.append(SelectTestViewController())
         controllers.append(QQLoginViewController())
         controllers.append(PickerViewController())
+        controllers.append(RotateViewController())
         // Do any additional setup after loading the view, typically from a nib.
     }
 

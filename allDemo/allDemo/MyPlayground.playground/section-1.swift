@@ -2,7 +2,8 @@
 
 import UIKit
 
-var x = 1.000001
-var s = NSString(format: "%0.1f", x)
-var xfloat = CGFloat(1.0)
-println(Int(xfloat))
+var x = NSTimeInterval(1.000001)
+var s = round(x)
+
+
+

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class collectionViewWithHeaderViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+class collectionViewWithHeaderViewController: UIViewController,UICollectionViewDelegate,LXReorderableCollectionViewDataSource {
 
     var collev:UICollectionView!
     var close = false
@@ -17,7 +17,7 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         
-        var clayout = UICollectionViewFlowLayout()
+        var clayout = LXReorderableCollectionViewFlowLayout()
         clayout.scrollDirection = UICollectionViewScrollDirection.Vertical
         clayout.headerReferenceSize = CGSize(width: mw, height: 30)
         
@@ -27,7 +27,6 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         collev.backgroundColor = UIColor.clearColor()
         collev.dataSource = self
         collev.delegate = self
-        
         self.view.addSubview(collev)
         // Do any additional setup after loading the view.
     }
@@ -43,6 +42,18 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell
+        var label:UILabel
+        if((cell.contentView.viewWithTag(1)) != nil){
+            label = cell.contentView.viewWithTag(1) as! UILabel
+        }else{
+            label = UILabel(frame: CGRect(origin: CGPointZero, size: cell.bounds.size))
+            label.textAlignment = NSTextAlignment.Center
+            label.tag = 1
+            cell.contentView.addSubview(label)
+        }
+        label.text = "\(indexPath.row)"
+        
+        
         if(indexPath.row % 2 == 0){
             cell.backgroundColor = UIColor.yellowColor()
             
@@ -53,7 +64,7 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return 6
     }
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         var view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "Header", forIndexPath: indexPath) as! UICollectionReusableView
@@ -99,7 +110,31 @@ class collectionViewWithHeaderViewController: UIViewController,UICollectionViewD
         }
 
     }
+    func collectionView(collectionView: UICollectionView!, itemAtIndexPath fromIndexPath: NSIndexPath!, willMoveToIndexPath toIndexPath: NSIndexPath!) {
+        println(fromIndexPath)
+        println(toIndexPath)
+    }
+    func collectionView(collectionView: UICollectionView!, itemAtIndexPath fromIndexPath: NSIndexPath!, didMoveToIndexPath toIndexPath: NSIndexPath!) {
+
+        println("from section\(fromIndexPath.section) row \(fromIndexPath.row)")
+        println("to section\(toIndexPath.section) row \(toIndexPath.row)")
+        
+    }
     
+    func collectionView(collectionView: UICollectionView!, itemAtIndexPath fromIndexPath: NSIndexPath!, canMoveToIndexPath toIndexPath: NSIndexPath!) -> Bool {
+        
+        if(toIndexPath.section != 0){
+            return false
+        }
+        return true
+    }
+    
+    func collectionView(collectionView: UICollectionView!, canMoveItemAtIndexPath indexPath: NSIndexPath!) -> Bool {
+        if(indexPath.section != 0){
+            return false
+        }
+        return true
+    }
     func closeSection(){
         
         

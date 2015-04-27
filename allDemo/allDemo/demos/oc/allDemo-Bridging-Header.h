@@ -8,6 +8,7 @@
 #import "ZDStickerView.h"
 #import "UIImageView+WebCache.h"
 #import "CLImageEditor.h"
+#import "LXReorderableCollectionViewFlowLayout.h"
 
 #import <TencentOpenApi/TencentOAuth.h>
 #import <TencentOpenApi/QQApiInterface.h>

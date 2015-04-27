@@ -1,6 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CLImageEditor" "${PODS_ROOT}/Headers/Public/PulsingHalo" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/ZDStickerView"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CLImageEditor" -isystem "${PODS_ROOT}/Headers/Public/PulsingHalo" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/ZDStickerView"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-CLImageEditor" -l"Pods-PulsingHalo" -l"Pods-SDWebImage" -l"Pods-ZDStickerView" -framework "Accelerate" -framework "CoreGraphics" -framework "CoreImage" -framework "ImageIO" -framework "QuartzCore"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CLImageEditor" "${PODS_ROOT}/Headers/Public/LXReorderableCollectionViewFlowLayout" "${PODS_ROOT}/Headers/Public/PulsingHalo" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/ZDStickerView"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CLImageEditor" -isystem "${PODS_ROOT}/Headers/Public/LXReorderableCollectionViewFlowLayout" -isystem "${PODS_ROOT}/Headers/Public/PulsingHalo" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/ZDStickerView"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-CLImageEditor" -l"Pods-LXReorderableCollectionViewFlowLayout" -l"Pods-PulsingHalo" -l"Pods-SDWebImage" -l"Pods-ZDStickerView" -framework "Accelerate" -framework "CoreGraphics" -framework "CoreImage" -framework "ImageIO" -framework "QuartzCore" -framework "UIKit"
 OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
 PODS_ROOT = ${SRCROOT}/Pods
